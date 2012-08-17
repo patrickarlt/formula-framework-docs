@@ -1,0 +1,3 @@
+[submodule "extensions/formula"]
+	path = extensions/formula
+	url = git@github.com:patrickarlt/formula-framework.git

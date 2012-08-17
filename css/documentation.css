@@ -1,78 +1,2748 @@
+@charset "UTF-8";
+/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
 /*
-Syntax error: File to import not found or unreadable: formula/config.
-              Load paths:
-                /Users/patrickarlt/Projects/common/formula-docs/sass
-                /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets
-                /Users/patrickarlt/Projects/common/formula-docs/extensions/formula/stylesheets
-                Compass::SpriteImporter
-        on line 2 of /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss
+ * Corrects `block` display not defined in IE6/7/8/9 & FF3.
+ */
+/* line 21, ../extensions/formula/stylesheets/formula/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
 
-1: /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss
+/*
+ * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
+ */
+/* line 31, ../extensions/formula/stylesheets/formula/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
 
-Backtrace:
-/Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss:2
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/import_node.rb:64:in `rescue in import'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/import_node.rb:42:in `import'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/import_node.rb:25:in `imported_file'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:20:in `visit'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:49:in `visit_root'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:20:in `visit'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/root_node.rb:20:in `render'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/engine.rb:308:in `_render'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/engine.rb:255:in `render'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:39:in `delete'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:32:in `block in deleted'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `each'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `deleted'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:16:in `refresh'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/bin/compass:23:in `load'
-/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/bin/compass:23:in `<main>'
-*/
-body:before {
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS5 devices.
+ */
+/* line 42, ../extensions/formula/stylesheets/formula/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
+ * Known issue: no IE6 support.
+ */
+/* line 52, ../extensions/formula/stylesheets/formula/normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 67, ../extensions/formula/stylesheets/formula/normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 82, ../extensions/formula/stylesheets/formula/normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7.
+ */
+/* line 90, ../extensions/formula/stylesheets/formula/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 102, ../extensions/formula/stylesheets/formula/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 112, ../extensions/formula/stylesheets/formula/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7.
+ * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
+ */
+/* line 125, ../extensions/formula/stylesheets/formula/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 130, ../extensions/formula/stylesheets/formula/normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 135, ../extensions/formula/stylesheets/formula/normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 140, ../extensions/formula/stylesheets/formula/normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 145, ../extensions/formula/stylesheets/formula/normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 150, ../extensions/formula/stylesheets/formula/normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome.
+ */
+/* line 159, ../extensions/formula/stylesheets/formula/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
+ */
+/* line 168, ../extensions/formula/stylesheets/formula/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 172, ../extensions/formula/stylesheets/formula/normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome.
+ */
+/* line 180, ../extensions/formula/stylesheets/formula/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9.
+ */
+/* line 188, ../extensions/formula/stylesheets/formula/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+/* line 198, ../extensions/formula/stylesheets/formula/normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome.
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 210, ../extensions/formula/stylesheets/formula/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 220, ../extensions/formula/stylesheets/formula/normalize.scss */
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: formula/config.\A               Load paths:\A                 /Users/patrickarlt/Projects/common/formula-docs/sass\A                 /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 /Users/patrickarlt/Projects/common/formula-docs/extensions/formula/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss\A \A 1: /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE6/7.
+ */
+/* line 230, ../extensions/formula/stylesheets/formula/normalize.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in S4.
+ */
+/* line 239, ../extensions/formula/stylesheets/formula/normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 244, ../extensions/formula/stylesheets/formula/normalize.scss */
+small, table caption {
+  font-size: 75%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ * gist.github.com/413930
+ */
+/* line 254, ../extensions/formula/stylesheets/formula/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 261, ../extensions/formula/stylesheets/formula/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 265, ../extensions/formula/stylesheets/formula/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+/* line 280, ../extensions/formula/stylesheets/formula/normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 284, ../extensions/formula/stylesheets/formula/normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE6/7.
+ */
+/* line 294, ../extensions/formula/stylesheets/formula/normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE7.
+ */
+/* line 303, ../extensions/formula/stylesheets/formula/normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE6/7/8/9, FF3.
+ * 2. Improves image quality when scaled in IE7.
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 318, ../extensions/formula/stylesheets/formula/normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9.
+ */
+/* line 327, ../extensions/formula/stylesheets/formula/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11.
+ */
+/* line 339, ../extensions/formula/stylesheets/formula/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7.
+ */
+/* line 351, ../extensions/formula/stylesheets/formula/normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 359, ../extensions/formula/stylesheets/formula/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9.
+ * 2. Corrects text not wrapping in FF3.
+ * 3. Corrects alignment displayed oddly in IE6/7.
+ */
+/* line 371, ../extensions/formula/stylesheets/formula/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 387, ../extensions/formula/stylesheets/formula/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
+ * UA stylesheet.
+ */
+/* line 400, ../extensions/formula/stylesheets/formula/normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE6.
+ */
+/* line 417, ../extensions/formula/stylesheets/formula/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 428, ../extensions/formula/stylesheets/formula/normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9.
+ * 2. Removes excess padding in IE8/9.
+ * 3. Removes excess padding in IE7.
+ *    Known issue: excess padding remains in IE6.
+ */
+/* line 440, ../extensions/formula/stylesheets/formula/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in S5, Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz`
+ *    to future-proof).
+ */
+/* line 453, ../extensions/formula/stylesheets/formula/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X.
+ */
+/* line 465, ../extensions/formula/stylesheets/formula/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+.
+ */
+/* line 474, ../extensions/formula/stylesheets/formula/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 484, ../extensions/formula/stylesheets/formula/normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 497, ../extensions/formula/stylesheets/formula/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Helper for responsive design */
+/* From : https://gist.github.com/2361408 */
+/*
+<!DOCTYPE html>
+<!--[if IE 8]>  <html class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9]>  <html class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]>   <html class="no-js"> <!--<![endif]-->
+*/
+/* line 1, ../extensions/formula/stylesheets/formula/helpers.scss */
+.left {
+  float: left;
+}
+
+/* line 5, ../extensions/formula/stylesheets/formula/helpers.scss */
+.right {
+  float: right;
+}
+
+/* line 9, ../extensions/formula/stylesheets/formula/helpers.scss */
+.clear {
+  clear: both;
+}
+
+/* line 13, ../extensions/formula/stylesheets/formula/helpers.scss */
+.show {
+  display: block !important;
+  visibility: visible;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* line 19, ../extensions/formula/stylesheets/formula/helpers.scss */
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* line 24, ../extensions/formula/stylesheets/formula/helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 20, ../extensions/formula/stylesheets/formula/mixins.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 29, ../extensions/formula/stylesheets/formula/helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* show and hide helpers for responsive design */
+@media screen and (max-width: 1024px) {
+  /* line 35, ../extensions/formula/stylesheets/formula/helpers.scss */
+  .hide-tablet-wide {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  /* line 38, ../extensions/formula/stylesheets/formula/helpers.scss */
+  .show-tablet-landscape {
+    display: block !important;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 44, ../extensions/formula/stylesheets/formula/helpers.scss */
+  .hide-tablet-tall {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  /* line 47, ../extensions/formula/stylesheets/formula/helpers.scss */
+  .show-tablet-portrait {
+    display: block !important;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 53, ../extensions/formula/stylesheets/formula/helpers.scss */
+  .hide-phone {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  /* line 56, ../extensions/formula/stylesheets/formula/helpers.scss */
+  .show-phone {
+    display: block !important;
+    visibility: visible;
+  }
+}
+/* line 45, ../extensions/formula/stylesheets/formula/grid.scss */
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 0 2em;
+  width: 100%;
+}
+
+/* line 52, ../extensions/formula/stylesheets/formula/grid.scss */
+.row {
+  position: relative;
+}
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 58, ../extensions/formula/stylesheets/formula/grid.scss */
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -0.5em;
+}
+@media screen and (max-width: 480px) {
+  /* line 66, ../extensions/formula/stylesheets/formula/grid.scss */
+  .row.respond-to-phone .column, .row.respond-to-phone .columns {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 1em;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 73, ../extensions/formula/stylesheets/formula/grid.scss */
+  .row.respond-to-tablet-tall .column, .row.respond-to-tablet-tall .columns {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 1em;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 80, ../extensions/formula/stylesheets/formula/grid.scss */
+  .row.respond-to-tablet-wide .column, .row.respond-to-tablet-wide .columns {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 1em;
+    width: 100%;
+  }
+}
+
+/* line 87, ../extensions/formula/stylesheets/formula/grid.scss */
+.column, .columns {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 1em;
+}
+/* line 94, ../extensions/formula/stylesheets/formula/grid.scss */
+.column:last-child, .columns:last-child {
+  float: right;
+}
+/* line 97, ../extensions/formula/stylesheets/formula/grid.scss */
+.column.left, .columns.left {
+  float: left;
+}
+/* line 100, ../extensions/formula/stylesheets/formula/grid.scss */
+.column.center, .columns.center {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.one {
+  width: 4.167%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.two {
+  width: 8.333%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.three {
+  width: 12.5%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.four {
+  width: 16.667%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.five {
+  width: 20.833%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.six {
+  width: 25%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.seven {
+  width: 29.167%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.eight {
+  width: 33.333%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.nine {
+  width: 37.5%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.ten {
+  width: 41.667%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.eleven {
+  width: 45.833%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.twelve {
+  width: 50%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.thirteen {
+  width: 54.167%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.fourteen {
+  width: 58.333%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.fifteen {
+  width: 62.5%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.sixteen {
+  width: 66.667%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.seventeen {
+  width: 70.833%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.eighteen {
+  width: 75%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.nineteen {
+  width: 79.167%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.twenty {
+  width: 83.333%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.twentyone {
+  width: 87.5%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.twentytwo {
+  width: 91.667%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.twentythree {
+  width: 95.833%;
+}
+
+/* line 107, ../extensions/formula/stylesheets/formula/grid.scss */
+.twentyfour {
+  width: 100%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-one {
+  margin-left: 4.167%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-one {
+  margin-right: 4.167%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-two {
+  margin-left: 8.333%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-two {
+  margin-right: 8.333%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-three {
+  margin-left: 12.5%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-three {
+  margin-right: 12.5%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-four {
+  margin-left: 16.667%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-four {
+  margin-right: 16.667%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-five {
+  margin-left: 20.833%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-five {
+  margin-right: 20.833%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-six {
+  margin-left: 25%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-six {
+  margin-right: 25%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-seven {
+  margin-left: 29.167%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-seven {
+  margin-right: 29.167%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-eight {
+  margin-left: 33.333%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-eight {
+  margin-right: 33.333%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-nine {
+  margin-left: 37.5%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-nine {
+  margin-right: 37.5%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-ten {
+  margin-left: 41.667%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-ten {
+  margin-right: 41.667%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-eleven {
+  margin-left: 45.833%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-eleven {
+  margin-right: 45.833%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-twelve {
+  margin-left: 50%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-twelve {
+  margin-right: 50%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-thirteen {
+  margin-left: 54.167%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-thirteen {
+  margin-right: 54.167%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-fourteen {
+  margin-left: 58.333%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-fourteen {
+  margin-right: 58.333%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-fifteen {
+  margin-left: 62.5%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-fifteen {
+  margin-right: 62.5%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-sixteen {
+  margin-left: 66.667%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-sixteen {
+  margin-right: 66.667%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-seventeen {
+  margin-left: 70.833%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-seventeen {
+  margin-right: 70.833%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-eighteen {
+  margin-left: 75%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-eighteen {
+  margin-right: 75%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-nineteen {
+  margin-left: 79.167%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-nineteen {
+  margin-right: 79.167%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-twenty {
+  margin-left: 83.333%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-twenty {
+  margin-right: 83.333%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-twentyone {
+  margin-left: 87.5%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-twentyone {
+  margin-right: 87.5%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-twentytwo {
+  margin-left: 91.667%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-twentytwo {
+  margin-right: 91.667%;
+}
+
+/* line 113, ../extensions/formula/stylesheets/formula/grid.scss */
+.pre-twentythree {
+  margin-left: 95.833%;
+}
+
+/* line 116, ../extensions/formula/stylesheets/formula/grid.scss */
+.post-twentythree {
+  margin-right: 95.833%;
+}
+
+/* line 121, ../extensions/formula/stylesheets/formula/grid.scss */
+img, object, embed, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 126, ../extensions/formula/stylesheets/formula/grid.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 131, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid .cell {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 1em;
+}
+/* line 137, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid.two-up .cell {
+  width: 50%;
+}
+/* line 142, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid.three-up .cell {
+  width: 33.333%;
+}
+/* line 147, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid.four-up .cell {
+  width: 25%;
+}
+/* line 152, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid.six-up .cell {
+  width: 16.667%;
+}
+/* line 157, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid.eight-up .cell {
+  width: 12.5%;
+}
+/* line 162, ../extensions/formula/stylesheets/formula/grid.scss */
+.grid.twelve-up .cell {
+  width: 8.333%;
+}
+
+/* line 1, ../extensions/formula/stylesheets/formula/layout.scss */
+body {
+  background: #fafafa;
+  color: #444444;
+}
+/* line 61, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body * html {
+  font-size: 100%;
+}
+/* line 64, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 10, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -72px;
+}
+/* line 18, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+wrapper push {
+  height: 72px;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer {
+  clear: both;
+  position: relative;
+  height: 72px;
+}
+
+/* line 11, ../extensions/formula/stylesheets/formula/layout.scss */
+#page {
+  padding-top: 40px;
+}
+
+/* line 18, ../extensions/formula/stylesheets/formula/layout.scss */
+#header {
+  overflow: hidden;
+  background: #fcfcfc -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #ffffff));
+  background: #fcfcfc -webkit-linear-gradient(#fafafa, #ffffff);
+  background: #fcfcfc -moz-linear-gradient(#fafafa, #ffffff);
+  background: #fcfcfc -o-linear-gradient(#fafafa, #ffffff);
+  background: #fcfcfc linear-gradient(#fafafa, #ffffff);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  border-bottom: 1px solid #cccccc;
+  height: 40px;
+  overflow: visible;
+  z-index: 100;
+}
+
+/* line 32, ../extensions/formula/stylesheets/formula/layout.scss */
+.text-logo {
+  font-size: 1.75em;
+  line-height: 1.714em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  line-height: 40px;
+  float: left;
+  color: gray;
+  padding-right: 1em;
+}
+
+/* line 43, ../extensions/formula/stylesheets/formula/layout.scss */
+#footer {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #050505), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(#050505, #1f1f1f);
+  background: -moz-linear-gradient(#050505, #1f1f1f);
+  background: -o-linear-gradient(#050505, #1f1f1f);
+  background: linear-gradient(#050505, #1f1f1f);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+}
+
+/* line 2, ../extensions/formula/stylesheets/formula/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #1f1f1f;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 5, ../extensions/formula/stylesheets/formula/typography.scss */
+h1.divider, h2.divider, h3.divider, h4.divider, h5.divider, h6.divider {
+  border-color: #cccccc;
+}
+/* line 8, ../extensions/formula/stylesheets/formula/typography.scss */
+h1.compact, h2.compact, h3.compact, h4.compact, h5.compact, h6.compact {
+  margin: 0;
+}
+/* line 11, ../extensions/formula/stylesheets/formula/typography.scss */
+h1.compact-top, h2.compact-top, h3.compact-top, h4.compact-top, h5.compact-top, h6.compact-top {
+  margin-top: 0;
+}
+/* line 14, ../extensions/formula/stylesheets/formula/typography.scss */
+h1.compact-bottom, h2.compact-bottom, h3.compact-bottom, h4.compact-bottom, h5.compact-bottom, h6.compact-bottom {
+  margin-bottom: 0;
+}
+
+/* line 21, ../extensions/formula/stylesheets/formula/typography.scss */
+hgroup h1:first-child, hgroup h2:first-child, hgroup h3:first-child, hgroup h4:first-child, hgroup h5:first-child, hgroup h6:first-child {
+  margin-bottom: 0;
+}
+/* line 24, ../extensions/formula/stylesheets/formula/typography.scss */
+hgroup h1:last-child, hgroup h2:last-child, hgroup h3:last-child, hgroup h4:last-child, hgroup h5:last-child, hgroup h6:last-child {
+  margin-top: 0;
+}
+
+/* line 30, ../extensions/formula/stylesheets/formula/typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+/* line 32, ../extensions/formula/stylesheets/formula/typography.scss */
+h1.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 0.021em;
+  padding-bottom: -0.021em;
+}
+
+/* line 37, ../extensions/formula/stylesheets/formula/typography.scss */
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333em;
+}
+/* line 39, ../extensions/formula/stylesheets/formula/typography.scss */
+h2.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 0.028em;
+  padding-bottom: -0.028em;
+}
+
+/* line 44, ../extensions/formula/stylesheets/formula/typography.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+/* line 46, ../extensions/formula/stylesheets/formula/typography.scss */
+h3.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 0.042em;
+  padding-bottom: -0.042em;
+}
+
+/* line 51, ../extensions/formula/stylesheets/formula/typography.scss */
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+/* line 53, ../extensions/formula/stylesheets/formula/typography.scss */
+h4.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 0.056em;
+  padding-bottom: -0.056em;
+}
+
+/* line 58, ../extensions/formula/stylesheets/formula/typography.scss */
+h5 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 60, ../extensions/formula/stylesheets/formula/typography.scss */
+h5.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: -0.063em;
+}
+
+/* line 65, ../extensions/formula/stylesheets/formula/typography.scss */
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #333333;
+}
+/* line 68, ../extensions/formula/stylesheets/formula/typography.scss */
+h6.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: -0.063em;
+}
+
+/* line 74, ../extensions/formula/stylesheets/formula/typography.scss */
+blockquote {
+  margin-left: 0;
+  border-color: #cccccc;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  border-left-style: solid;
+  border-left-width: 0.357em;
+  padding-left: 1.357em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 84, ../extensions/formula/stylesheets/formula/typography.scss */
+p {
+  margin-bottom: 1.5em;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  margin-top: 0;
+}
+/* line 88, ../extensions/formula/stylesheets/formula/typography.scss */
+p.large {
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+/* line 91, ../extensions/formula/stylesheets/formula/typography.scss */
+p.small {
+  font-size: 0.813em;
+  line-height: 1.846em;
+}
+
+/* line 97, ../extensions/formula/stylesheets/formula/typography.scss */
+a {
+  color: #1e547a;
+  text-decoration: none;
+}
+/* line 100, ../extensions/formula/stylesheets/formula/typography.scss */
+a:hover, a:focus {
+  color: #403e41;
+  cursor: pointer;
+}
+
+/* line 111, ../extensions/formula/stylesheets/formula/typography.scss */
+nav ul, nav ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 117, ../extensions/formula/stylesheets/formula/typography.scss */
+ul, ol {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  margin-bottom: 1.5em;
+  padding-left: 1.25em;
+  margin-top: 0;
+}
+
+/* line 126, ../extensions/formula/stylesheets/formula/typography.scss */
+dl {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  margin-top: 0;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/typography.scss */
+dl dt {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+/* line 134, ../extensions/formula/stylesheets/formula/typography.scss */
+dl dd {
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
+/* line 141, ../extensions/formula/stylesheets/formula/typography.scss */
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  background: #fafafa;
+  padding: .15em;
+}
+
+/* line 151, ../extensions/formula/stylesheets/formula/typography.scss */
+pre {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+/* line 154, ../extensions/formula/stylesheets/formula/typography.scss */
+pre code {
+  border-style: solid;
+  border-width: 0.071em;
+  padding: 0.786em;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5em;
+  border-width: 1px;
+  overflow-x: scroll;
+  overflow-y: auto;
+  white-space: pre;
+  word-wrap: normal;
+  display: block;
+}
+
+/* line 169, ../extensions/formula/stylesheets/formula/typography.scss */
+abbr[title] {
+  cursor: help;
+}
+
+/* line 174, ../extensions/formula/stylesheets/formula/typography.scss */
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid white;
+}
+
+/* line 184, ../extensions/formula/stylesheets/formula/typography.scss */
+.center-text {
+  text-align: center;
+}
+
+/* line 28, ../extensions/formula/stylesheets/formula/forms.scss */
+form .field {
+  margin-bottom: 1.5em;
+  clear: both;
+  display: block;
+}
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+form .field:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 33, ../extensions/formula/stylesheets/formula/forms.scss */
+form .field small, form .field table caption, table form .field caption {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: #a6a6a6;
+  display: block;
+}
+/* line 40, ../extensions/formula/stylesheets/formula/forms.scss */
+form .input {
+  margin-left: 20.833%;
+}
+/* line 44, ../extensions/formula/stylesheets/formula/forms.scss */
+form legend, form span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 1em;
+  width: 20.833%;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  border-top-style: solid;
+  border-top-width: 0em;
+  padding-top: 0.429em;
+  text-align: right;
+}
+/* line 52, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset {
+  margin-bottom: 0.75em;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 57, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .field {
+  margin-left: 0%;
+  clear: none;
+}
+/* line 61, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .field label {
+  margin-left: 0%;
+  font-size: 0.75em;
+  line-height: 2em;
+  display: block;
+  color: #a6a6a6;
+}
+/* line 68, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset > .field {
+  margin-left: 20.833%;
+}
+/* line 71, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .field, form fieldset .fields {
+  margin-bottom: 0.75em;
+}
+/* line 74, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields {
+  margin-left: 20.833%;
+  padding: 0;
+  width: auto;
+}
+/* line 79, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.two .field {
+  width: 49%;
+  float: left;
+}
+/* line 82, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.two .field + .field {
+  float: right;
+}
+/* line 88, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.three .field {
+  width: 31.5%;
+  float: left;
+}
+/* line 92, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.three > .field:nth-child(2) {
+  margin: 0 2.5%;
+}
+/* line 95, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.three > .field:last-child {
+  float: right;
+}
+/* line 100, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.four .field {
+  width: 23.5%;
+  float: left;
+}
+/* line 104, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.four .field:nth-child(1), form fieldset .fields.four .input:nth-child(2), form fieldset .fields.four .input:nth-child(3) {
+  margin: 0 1.75% 0 0;
+}
+/* line 107, ../extensions/formula/stylesheets/formula/forms.scss */
+form fieldset .fields.four .input:nth-child(3) {
+  float: right;
+}
+/* line 116, ../extensions/formula/stylesheets/formula/forms.scss */
+form ul.input {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: .5em;
+}
+/* line 121, ../extensions/formula/stylesheets/formula/forms.scss */
+form ul.input li {
+  overflow: hidden;
+  margin: 0;
+}
+/* line 124, ../extensions/formula/stylesheets/formula/forms.scss */
+form ul.input li label {
+  display: inline;
+  float: left;
+  line-height: 24px;
+  margin: 0;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/forms.scss */
+form ul.input li input {
+  float: left;
+}
+/* line 136, ../extensions/formula/stylesheets/formula/forms.scss */
+form .actions {
+  margin-left: 20.833%;
+  overflow: hidden;
+}
+/* line 139, ../extensions/formula/stylesheets/formula/forms.scss */
+form .actions input[type="submit"], form .actions .btn, form .actions button {
+  float: left;
+  margin-right: 1em;
+}
+/* line 2, ../extensions/formula/stylesheets/formula/forms.scss */
+form.stacked .label, form.stacked span, form.stacked legend {
+  font-size: 1em;
+  line-height: 1.5em;
+  display: block;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+/* line 9, ../extensions/formula/stylesheets/formula/forms.scss */
+form.stacked .input, form.stacked .input-list {
+  margin-left: 0%;
+  padding: 0;
+  clear: both;
+}
+/* line 14, ../extensions/formula/stylesheets/formula/forms.scss */
+form.stacked .actions {
+  margin-left: 0%;
+}
+/* line 18, ../extensions/formula/stylesheets/formula/forms.scss */
+form.stacked fieldset > .field, form.stacked fieldset .fields {
+  clear: both;
+  width: 100%;
+  margin-left: 0;
+}
+/* line 155, ../extensions/formula/stylesheets/formula/forms.scss */
+form.single {
+  position: relative;
+}
+/* line 157, ../extensions/formula/stylesheets/formula/forms.scss */
+form.single .field {
+  margin-bottom: 0em;
+}
+/* line 160, ../extensions/formula/stylesheets/formula/forms.scss */
+form.single input[type="submit"] {
+  border-style: solid;
+  border-width: 0.071em;
+  padding: 0.357em;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #a6a6a6;
+  height: 2.571em;
+  position: absolute;
+  padding-left: .75em;
+  padding-right: .75em;
+  margin-right: 0;
+  bottom: 0;
+  right: -1px;
+}
+/* line 175, ../extensions/formula/stylesheets/formula/forms.scss */
+form.single .label, form.single span {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 20, ../extensions/formula/stylesheets/formula/mixins.scss */
+form.single .label.focusable:active, form.single .label.focusable:focus, form.single span.focusable:active, form.single span.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/* line 178, ../extensions/formula/stylesheets/formula/forms.scss */
+form.single .input {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 2, ../extensions/formula/stylesheets/formula/forms.scss */
+  form .label, form span, form legend {
+    font-size: 1em;
+    line-height: 1.5em;
+    display: block;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+  }
+  /* line 9, ../extensions/formula/stylesheets/formula/forms.scss */
+  form .input, form .input-list {
+    margin-left: 0%;
+    padding: 0;
+    clear: both;
+  }
+  /* line 14, ../extensions/formula/stylesheets/formula/forms.scss */
+  form .actions {
+    margin-left: 0%;
+  }
+  /* line 18, ../extensions/formula/stylesheets/formula/forms.scss */
+  form fieldset > .field, form fieldset .fields {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* line 200, ../extensions/formula/stylesheets/formula/forms.scss */
+input, select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 203, ../extensions/formula/stylesheets/formula/forms.scss */
+input:focus, select:focus {
+  outline: none;
+}
+
+/* line 209, ../extensions/formula/stylesheets/formula/forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: block;
+  margin: 6px 4px 0 1px;
+  width: auto;
+}
+
+/* line 231, ../extensions/formula/stylesheets/formula/forms.scss */
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+select,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0.071em;
+  padding: 0.357em;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  border: 1px solid #a6a6a6;
+  height: 2.571em;
+}
+/* line 239, ../extensions/formula/stylesheets/formula/forms.scss */
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #27adec;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* line 247, ../extensions/formula/stylesheets/formula/forms.scss */
+textarea {
+  height: auto;
+  resize: none;
+  width: 100%;
+}
+/* line 251, ../extensions/formula/stylesheets/formula/forms.scss */
+textarea.medium {
+  height: 8em;
+}
+/* line 254, ../extensions/formula/stylesheets/formula/forms.scss */
+textarea.tall {
+  height: 16em;
+}
+/* line 257, ../extensions/formula/stylesheets/formula/forms.scss */
+textarea .resizeable {
+  resize: both;
+}
+
+/* line 263, ../extensions/formula/stylesheets/formula/forms.scss */
+select {
+  border-style: solid;
+  border-width: 0.071em;
+  padding: 0.614em;
+  -webkit-appearance: menulist-button;
+  line-height: 36px;
+  height: 36px;
+}
+
+/* line 271, ../extensions/formula/stylesheets/formula/forms.scss */
+input[type="file"] {
+  font-size: 12px;
+  width: 90%;
+  margin: 8px 0;
+}
+
+/* line 278, ../extensions/formula/stylesheets/formula/forms.scss */
+input[type="submit"] {
+  width: auto;
+}
+
+/* line 1, ../extensions/formula/stylesheets/formula/tables.scss */
+table {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+}
+/* line 6, ../extensions/formula/stylesheets/formula/tables.scss */
+table th, table td {
+  padding: 0.5em;
+}
+/* line 9, ../extensions/formula/stylesheets/formula/tables.scss */
+table td {
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+/* line 12, ../extensions/formula/stylesheets/formula/tables.scss */
+table th {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+/* line 18, ../extensions/formula/stylesheets/formula/tables.scss */
+table tfoot.strong, table thead.strong {
+  background: #ebebeb;
+}
+/* line 20, ../extensions/formula/stylesheets/formula/tables.scss */
+table tfoot.strong th, table tfoot.strong td, table thead.strong th, table thead.strong td {
+  border-color: #cccccc;
+}
+/* line 23, ../extensions/formula/stylesheets/formula/tables.scss */
+table tfoot.strong th, table thead.strong th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 11px;
+}
+/* line 26, ../extensions/formula/stylesheets/formula/tables.scss */
+table tfoot.strong td, table thead.strong td {
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 11px;
+}
+/* line 32, ../extensions/formula/stylesheets/formula/tables.scss */
+table tfoot td {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+/* line 39, ../extensions/formula/stylesheets/formula/tables.scss */
+table caption {
+  text-align: left;
+  color: gray;
+  caption-side: bottom;
+}
+/* line 48, ../extensions/formula/stylesheets/formula/tables.scss */
+table.bordered {
+  background: white;
+}
+/* line 50, ../extensions/formula/stylesheets/formula/tables.scss */
+table.bordered th, table.bordered td {
+  border-style: solid;
+  border-width: 1px;
+  padding: 11px;
+  border-color: #cccccc;
+}
+/* line 57, ../extensions/formula/stylesheets/formula/tables.scss */
+table.striped tbody tr:nth-child(even) {
+  background: #ebebeb;
+}
+/* line 64, ../extensions/formula/stylesheets/formula/tables.scss */
+table.hover-rows tbody tr:hover {
+  background: #55c8fe;
+}
+
+/* line 1, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"], .btn, button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.056em;
+  padding: 0.411em;
+  background: #b9b9b9 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #a6a6a6));
+  background: #b9b9b9 -webkit-linear-gradient(#cccccc, #a6a6a6);
+  background: #b9b9b9 -moz-linear-gradient(#cccccc, #a6a6a6);
+  background: #b9b9b9 -o-linear-gradient(#cccccc, #a6a6a6);
+  background: #b9b9b9 linear-gradient(#cccccc, #a6a6a6);
+  border-color: #a6a6a6;
+  color: white;
+  text-shadow: rgba(166, 166, 166, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+/* line 13, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"]:hover, .btn:hover, button:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #a6a6a6;
+  border-color: gray;
+  color: white;
+  text-shadow: rgba(166, 166, 166, 0.5);
+  text-decoration: none;
+  color: white;
+}
+/* line 20, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"]:disabled, input[type="submit"].disabled, .btn:disabled, .btn.disabled, button:disabled, button.disabled {
+  opacity: 0.5;
+}
+/* line 22, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"]:disabled:hover, input[type="submit"].disabled:hover, .btn:disabled:hover, .btn.disabled:hover, button:disabled:hover, button.disabled:hover {
+  cursor: default;
+}
+/* line 27, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].full-width, .btn.full-width, button.full-width {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 32, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].block, .btn.block, button.block {
+  text-align: center;
+  display: block;
+}
+/* line 38, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].primary, .btn.primary, button.primary {
+  background: #3ebaf5 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #55c8fe), color-stop(100%, #27adec));
+  background: #3ebaf5 -webkit-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -moz-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -o-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 linear-gradient(#55c8fe, #27adec);
+  border-color: #27adec;
+  color: white;
+  text-shadow: 0 1px 0 rgba(39, 173, 236, 0.5);
+}
+/* line 40, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].primary:hover, .btn.primary:hover, button.primary:hover {
+  background: #27adec;
+  border-color: #27adec;
+  color: white;
+  text-shadow: 0 1px 0 rgba(39, 173, 236, 0.5);
+}
+/* line 45, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].secondary, .btn.secondary, button.secondary {
+  background: #81c036 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ce37), color-stop(100%, #79b335));
+  background: #81c036 -webkit-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -moz-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -o-linear-gradient(#89ce37, #79b335);
+  background: #81c036 linear-gradient(#89ce37, #79b335);
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 47, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].secondary:hover, .btn.secondary:hover, button.secondary:hover {
+  background: #79b335;
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 52, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].submit, .btn.submit, button.submit {
+  background: #81c036 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ce37), color-stop(100%, #79b335));
+  background: #81c036 -webkit-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -moz-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -o-linear-gradient(#89ce37, #79b335);
+  background: #81c036 linear-gradient(#89ce37, #79b335);
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 54, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].submit:hover, .btn.submit:hover, button.submit:hover {
+  background: #79b335;
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 60, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].tertiary, .btn.tertiary, button.tertiary {
+  background: #81c036 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ce37), color-stop(100%, #79b335));
+  background: #81c036 -webkit-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -moz-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -o-linear-gradient(#89ce37, #79b335);
+  background: #81c036 linear-gradient(#89ce37, #79b335);
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 62, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].tertiary:hover, .btn.tertiary:hover, button.tertiary:hover {
+  background: #79b335;
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 69, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].add, .btn.add, button.add {
+  background: #81c036 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ce37), color-stop(100%, #79b335));
+  background: #81c036 -webkit-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -moz-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -o-linear-gradient(#89ce37, #79b335);
+  background: #81c036 linear-gradient(#89ce37, #79b335);
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 71, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].add:hover, .btn.add:hover, button.add:hover {
+  background: #79b335;
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 1px 0 rgba(121, 179, 53, 0.5);
+}
+/* line 78, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].danger, .btn.danger, button.danger {
+  background: #e54040 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec5555), color-stop(100%, #de2c2c));
+  background: #e54040 -webkit-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -moz-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -o-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 linear-gradient(#ec5555, #de2c2c);
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 80, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].danger:hover, .btn.danger:hover, button.danger:hover {
+  background: #de2c2c;
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 87, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].delete, .btn.delete, button.delete {
+  background: #e54040 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec5555), color-stop(100%, #de2c2c));
+  background: #e54040 -webkit-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -moz-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -o-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 linear-gradient(#ec5555, #de2c2c);
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 89, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].delete:hover, .btn.delete:hover, button.delete:hover {
+  background: #de2c2c;
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 96, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].info, .btn.info, button.info {
+  background: #e54040 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec5555), color-stop(100%, #de2c2c));
+  background: #e54040 -webkit-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -moz-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -o-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 linear-gradient(#ec5555, #de2c2c);
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 98, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].info:hover, .btn.info:hover, button.info:hover {
+  background: #de2c2c;
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 105, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].edit, .btn.edit, button.edit {
+  background: #e54040 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec5555), color-stop(100%, #de2c2c));
+  background: #e54040 -webkit-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -moz-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -o-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 linear-gradient(#ec5555, #de2c2c);
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 107, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].edit:hover, .btn.edit:hover, button.edit:hover {
+  background: #de2c2c;
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 1px 0 rgba(222, 44, 44, 0.5);
+}
+/* line 114, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].light, .btn.light, button.light {
+  background: #fafafa;
+  border-color: #cccccc;
+  color: #a6a6a6;
+  text-shadow: none;
+}
+/* line 116, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].light:hover, .btn.light:hover, button.light:hover {
+  background: #ebebeb;
+  border-color: #cccccc;
+  color: #a6a6a6;
+  text-shadow: none;
+}
+/* line 123, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].dark, .btn.dark, button.dark {
+  background: #333333;
+  border-color: #050505;
+  color: gray;
+  text-shadow: none;
+}
+/* line 125, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].dark:hover, .btn.dark:hover, button.dark:hover {
+  background: #050505;
+  border-color: #050505;
+  color: gray;
+  text-shadow: none;
+}
+/* line 131, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].trasparent, .btn.trasparent, button.trasparent {
+  background: transparent;
+  border-color: transparent;
+  color: #1e547a;
+}
+/* line 135, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].trasparent:hover, .btn.trasparent:hover, button.trasparent:hover {
+  color: #403e41;
+}
+/* line 141, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].x-small, .btn.x-small, button.x-small {
+  font-size: 0.75em;
+  line-height: 2em;
+  border-width: 1px;
+}
+/* line 146, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].small, .btn.small, button.small {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  border-width: 1px;
+}
+/* line 151, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].large, .btn.large, button.large {
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+/* line 155, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"].x-large, .btn.x-large, button.x-large {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 163, ../extensions/formula/stylesheets/formula/button.scss */
+.button-group {
+  overflow: hidden;
+}
+/* line 165, ../extensions/formula/stylesheets/formula/button.scss */
+.button-group input[type="submit"], .button-group .btn, .button-group button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-left-width: 0px;
+  display: block;
+  float: left;
+}
+/* line 172, ../extensions/formula/stylesheets/formula/button.scss */
+.button-group :first-child {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-left-width: 1px;
+}
+/* line 178, ../extensions/formula/stylesheets/formula/button.scss */
+.button-group :last-child {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 185, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"] {
+  background: #3ebaf5 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #55c8fe), color-stop(100%, #27adec));
+  background: #3ebaf5 -webkit-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -moz-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -o-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 linear-gradient(#55c8fe, #27adec);
+  border-color: #27adec;
+  color: white;
+  text-shadow: 0 1px 0 rgba(39, 173, 236, 0.5);
+}
+/* line 187, ../extensions/formula/stylesheets/formula/button.scss */
+input[type="submit"]:hover {
+  background: #27adec;
+  border-color: #27adec;
+  color: white;
+  text-shadow: 0 1px 0 rgba(39, 173, 236, 0.5);
+}
+
+/* line 1, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5em;
+  background: #b9b9b9 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #a6a6a6));
+  background: #b9b9b9 -webkit-linear-gradient(#cccccc, #a6a6a6);
+  background: #b9b9b9 -moz-linear-gradient(#cccccc, #a6a6a6);
+  background: #b9b9b9 -o-linear-gradient(#cccccc, #a6a6a6);
+  background: #b9b9b9 linear-gradient(#cccccc, #a6a6a6);
+  border-color: #a6a6a6;
+  color: white;
+  text-shadow: 0 -1px 0 #a6a6a6;
+  border-style: solid;
+  border-width: 0.063em;
+  padding: -0.063em;
+  text-align: center;
+  position: relative;
+}
+/* line 9, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert h1, .alert h2, .alert h3, .alert h4, .alert h5, .alert h6 {
+  margin-top: 0em;
+  margin-bottom: 0.75em;
+  color: inherit;
+}
+/* line 14, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+/* line 18, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert .close {
+  opacity: 0.5;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  border-bottom: none;
+  color: white;
+}
+/* line 27, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert .close:after {
+  content: "×";
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-top: -15px;
+}
+/* line 34, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert .close:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 40, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert a {
+  color: white;
+  border-bottom: 1px solid white;
+}
+/* line 43, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert a:hover {
+  opacity: 0.8;
+  border-bottom: none;
+  text-decoration: none;
+}
+/* line 49, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert.success {
+  background: #81c036 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ce37), color-stop(100%, #79b335));
+  background: #81c036 -webkit-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -moz-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -o-linear-gradient(#89ce37, #79b335);
+  background: #81c036 linear-gradient(#89ce37, #79b335);
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 -1px 0 #79b335;
+}
+/* line 52, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert.danger {
+  background: #e54040 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec5555), color-stop(100%, #de2c2c));
+  background: #e54040 -webkit-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -moz-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -o-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 linear-gradient(#ec5555, #de2c2c);
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 -1px 0 #de2c2c;
+}
+/* line 55, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert.info {
+  background: #3ebaf5 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #55c8fe), color-stop(100%, #27adec));
+  background: #3ebaf5 -webkit-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -moz-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -o-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 linear-gradient(#55c8fe, #27adec);
+  border-color: #27adec;
+  color: white;
+  text-shadow: 0 -1px 0 #27adec;
+}
+/* line 58, ../extensions/formula/stylesheets/formula/patterns.scss */
+.alert.notice {
+  background: #dac81f -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e2cf1b), color-stop(100%, #d3c223));
+  background: #dac81f -webkit-linear-gradient(#e2cf1b, #d3c223);
+  background: #dac81f -moz-linear-gradient(#e2cf1b, #d3c223);
+  background: #dac81f -o-linear-gradient(#e2cf1b, #d3c223);
+  background: #dac81f linear-gradient(#e2cf1b, #d3c223);
+  border-color: #d3c223;
+  color: white;
+  text-shadow: 0 -1px 0 #d3c223;
+}
+
+/* line 63, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.063em;
+  padding: 1.438em;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  border-color: #cccccc;
+  background: white;
+}
+/* line 69, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel > :first-child {
+  margin-top: 0em;
+}
+/* line 72, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel > :last-child {
+  margin-bottom: 0em;
+}
+/* line 75, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.clip-bottom {
+  padding-bottom: 0;
+}
+/* line 78, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.clip-top {
+  padding-top: 0;
+}
+/* line 81, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.edge-to-edge {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 85, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.no-padding {
+  padding: 0;
+}
+/* line 88, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.success {
+  background: #81c036 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ce37), color-stop(100%, #79b335));
+  background: #81c036 -webkit-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -moz-linear-gradient(#89ce37, #79b335);
+  background: #81c036 -o-linear-gradient(#89ce37, #79b335);
+  background: #81c036 linear-gradient(#89ce37, #79b335);
+  border-color: #79b335;
+  color: white;
+  text-shadow: 0 -1px 0 #79b335;
+}
+/* line 91, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.danger {
+  background: #e54040 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec5555), color-stop(100%, #de2c2c));
+  background: #e54040 -webkit-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -moz-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 -o-linear-gradient(#ec5555, #de2c2c);
+  background: #e54040 linear-gradient(#ec5555, #de2c2c);
+  border-color: #de2c2c;
+  color: white;
+  text-shadow: 0 -1px 0 #de2c2c;
+}
+/* line 94, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.info {
+  background: #3ebaf5 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #55c8fe), color-stop(100%, #27adec));
+  background: #3ebaf5 -webkit-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -moz-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 -o-linear-gradient(#55c8fe, #27adec);
+  background: #3ebaf5 linear-gradient(#55c8fe, #27adec);
+  border-color: #27adec;
+  color: white;
+  text-shadow: 0 -1px 0 #27adec;
+}
+/* line 97, ../extensions/formula/stylesheets/formula/patterns.scss */
+.panel.notice {
+  background: #dac81f -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e2cf1b), color-stop(100%, #d3c223));
+  background: #dac81f -webkit-linear-gradient(#e2cf1b, #d3c223);
+  background: #dac81f -moz-linear-gradient(#e2cf1b, #d3c223);
+  background: #dac81f -o-linear-gradient(#e2cf1b, #d3c223);
+  background: #dac81f linear-gradient(#e2cf1b, #d3c223);
+  border-color: #d3c223;
+  color: white;
+  text-shadow: 0 -1px 0 #d3c223;
+}
+
+/* line 102, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+/* line 105, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip .tooltip-content {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 12px;
+  line-height: 1em;
+  background: black;
+  display: none;
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding: 4px;
+  z-index: 999;
+}
+/* line 120, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip:hover .tooltip-content {
+  display: block;
+  opacity: 0.9;
+}
+/* line 126, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.above .tooltip-content, .tooltip.below .tooltip-content {
+  left: 50%;
+  margin-left: -25%;
+}
+/* line 132, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.above .tooltip-content {
+  top: -135%;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/mixins.scss */
+.tooltip.above .tooltip-content:after {
+  width: 0;
+  height: 0;
+  content: "";
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  border: 6px solid transparent;
+  margin-left: -6px;
+  border-top-color: black;
+  border-bottom: none;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+}
+/* line 138, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.below .tooltip-content {
+  top: 135%;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/mixins.scss */
+.tooltip.below .tooltip-content:after {
+  width: 0;
+  height: 0;
+  content: "";
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  border: 6px solid transparent;
+  margin-left: -6px;
+  border-bottom: black;
+  border-top: none;
+  left: 50%;
+  top: -6px;
+  margin-left: -6px;
+}
+/* line 143, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.left, .tooltip.right {
+  float: none;
+}
+/* line 145, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.left .tooltip-content, .tooltip.right .tooltip-content {
+  top: 50%;
+  margin-top: -50%;
+}
+/* line 151, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.left .tooltip-content {
+  left: 135%;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/mixins.scss */
+.tooltip.left .tooltip-content:after {
+  width: 0;
+  height: 0;
+  content: "";
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  border: 6px solid transparent;
+  margin-top: -6px;
+  border-right-color: black;
+  border-left: none;
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+}
+/* line 157, ../extensions/formula/stylesheets/formula/patterns.scss */
+.tooltip.right .tooltip-content {
+  right: 135%;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/mixins.scss */
+.tooltip.right .tooltip-content:after {
+  width: 0;
+  height: 0;
+  content: "";
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  border: 6px solid transparent;
+  margin-top: -6px;
+  border-left-color: black;
+  border-right: none;
+  right: -6px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+/* line 164, ../extensions/formula/stylesheets/formula/patterns.scss */
+.label {
+  font-size: 0.75em;
+  line-height: 2em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background: gray;
+  color: white;
+  padding: .25em .4em;
+}
+/* line 170, ../extensions/formula/stylesheets/formula/patterns.scss */
+.label.important {
+  background: #de2c2c;
+}
+/* line 173, ../extensions/formula/stylesheets/formula/patterns.scss */
+.label.info {
+  background: #27adec;
+}
+/* line 176, ../extensions/formula/stylesheets/formula/patterns.scss */
+.label.success {
+  background: #79b335;
+}
+/* line 179, ../extensions/formula/stylesheets/formula/patterns.scss */
+.label.warning {
+  background: #e37b2f;
+}
+
+/* line 184, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav {
+  position: relative;
+}
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+nav:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 188, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal h3, nav.vertical h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  color: gray;
+}
+/* line 195, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal hr, nav.vertical hr {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+  margin-top: 0.375em;
+  margin-bottom: 0.375em;
+}
+/* line 203, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul, nav.vertical ul {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+/* line 208, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li a, nav.vertical ul li a {
+  color: #a6a6a6;
+  padding: 0 1em 0 1em;
+  line-height: 40px;
+  font-size: 14px;
+  display: block;
+  text-shadow: 0 1px 0 white;
+}
+/* line 217, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li:hover > a, nav.vertical ul li:hover > a {
+  background: #ebebeb;
+}
+/* line 221, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown, nav.vertical ul li.dropdown {
+  position: relative;
+}
+/* line 223, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown > a, nav.vertical ul li.dropdown > a {
+  padding-right: 1.5em;
+}
+/* line 225, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown > a:after, nav.vertical ul li.dropdown > a:after {
+  position: absolute;
+  top: 45%;
+  right: 0.5em;
+}
+/* line 231, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu, nav.vertical ul li.dropdown .dropdown-menu {
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  display: none;
+  float: left;
+  clear: both;
+}
+/* line 240, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu > :nth-child(1), nav.vertical ul li.dropdown .dropdown-menu > :nth-child(1) {
+  margin-top: 0.375em;
+}
+/* line 243, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu ul, nav.vertical ul li.dropdown .dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+/* line 247, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu ul li, nav.vertical ul li.dropdown .dropdown-menu ul li {
+  float: none;
+  display: block;
+  clear: both;
+  padding: 0;
+}
+/* line 252, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu ul li a, nav.vertical ul li.dropdown .dropdown-menu ul li a {
+  border: none;
+  font-size: 0.813em;
+  line-height: 1.846em;
+  line-height: 2.25em;
+  color: gray;
+}
+/* line 257, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu ul li a:hover, nav.horizontal ul li.dropdown .dropdown-menu ul li a:focus, nav.vertical ul li.dropdown .dropdown-menu ul li a:hover, nav.vertical ul li.dropdown .dropdown-menu ul li a:focus {
+  background: #ebebeb;
+}
+/* line 263, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li.dropdown .dropdown-menu ul:last-of-type, nav.vertical ul li.dropdown .dropdown-menu ul:last-of-type {
+  margin-bottom: 0.375em;
+}
+/* line 276, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.panel {
+  padding: 0;
+}
+/* line 278, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.panel > h3:first-child {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 284, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal ul li {
+  float: left;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/mixins.scss */
+nav.horizontal .dropdown > a:after {
+  width: 0;
+  height: 0;
+  content: "";
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  border: 4px solid transparent;
+  margin-left: -4px;
+  border-top-color: #cccccc;
+  border-bottom: none;
+}
+/* line 290, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.horizontal .dropdown-menu {
+  top: 45px;
+}
+/* line 129, ../extensions/formula/stylesheets/formula/mixins.scss */
+nav.vertical .dropdown > a:after {
+  width: 0;
+  height: 0;
+  content: "";
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  border: 4px solid transparent;
+  margin-top: -4px;
+  border-left-color: #cccccc;
+  border-right: none;
+}
+/* line 298, ../extensions/formula/stylesheets/formula/patterns.scss */
+nav.vertical .dropdown-menu {
+  top: 0;
+  right: -165px;
+}
