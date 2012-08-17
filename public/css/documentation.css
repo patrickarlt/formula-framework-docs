@@ -1,0 +1,78 @@
+/*
+Syntax error: File to import not found or unreadable: formula/config.
+              Load paths:
+                /Users/patrickarlt/Projects/common/formula-docs/sass
+                /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets
+                /Users/patrickarlt/Projects/common/formula-docs/extensions/formula/stylesheets
+                Compass::SpriteImporter
+        on line 2 of /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss
+
+1: /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss
+
+Backtrace:
+/Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss:2
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/import_node.rb:42:in `import'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:49:in `visit_root'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:20:in `visit'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/tree/root_node.rb:20:in `render'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/engine.rb:308:in `_render'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.237/lib/sass/engine.rb:255:in `render'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:39:in `delete'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:32:in `block in deleted'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `each'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `deleted'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:16:in `refresh'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/bin/compass:23:in `load'
+/Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: formula/config.\A               Load paths:\A                 /Users/patrickarlt/Projects/common/formula-docs/sass\A                 /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/patrickarlt/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 /Users/patrickarlt/Projects/common/formula-docs/extensions/formula/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss\A \A 1: /Users/patrickarlt/Projects/common/formula-docs/sass/documentation.scss"; }

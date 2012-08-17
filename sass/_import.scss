@@ -1,0 +1,10 @@
+@import "compass";
+
+// Import default configuration and theme
+@import "formula/config.scss";
+
+// Import Formula mixins
+@import "formula/mixins.scss";
+
+// Import the Formula documentation theme config
+@import "_theme_config.scss";
