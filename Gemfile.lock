@@ -22,6 +22,7 @@ GEM
       slop (~> 2.1.0)
     pry-nav (0.0.4)
       pry (~> 0.9.7.4)
+    redcarpet (2.1.1)
     redis (2.2.2)
     ruby_parser (2.3.1)
       sexp_processor (~> 3.0)
@@ -48,5 +49,6 @@ DEPENDENCIES
   htmlentities (~> 4.3.1)
   pry
   pry-nav
+  redcarpet
   sass (= 3.2.0.alpha.237)
   stasis

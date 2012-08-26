@@ -1,4 +1,4 @@
-$(".dropdown").mouseenter(function(){
+$(".dropdown, .btn-dropdown").mouseenter(function(){
     clearTimeout($(this).data('formula-dropdown-intent'));
     $(this).find(".dropdown-menu").show();
 }).mouseleave(function(){

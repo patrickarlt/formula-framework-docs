@@ -46,66 +46,14 @@
 </div>
     </header>
     <div id="page">
-      <section class="row">
-  <div class="twentyfour columns">
-    <h2>Panels</h2>
-  </div>
-  <div class="row">
-    <div class="eight columns">
-      <h6 class="compact">Examples</h6>
-      <pre><code class='language-markup'>&lt;div class=&quot;panel&quot;&gt;
-  &lt;p&gt;Alert&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-      <pre><code class='language-markup'>&lt;div class=&quot;panel success&quot;&gt;
-  &lt;p&gt;Alert&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-      <h6 class="compact">Semantic Classes</h6>
-      <p>You can add classes to apply different styles to alerts.</p>
-      <p><code>error</code> <code>success</code> <code>notice</code> <code>info</code></p>
-    </div>
-    <div class="fifteen columns pre-one"> 
-      
-      <div class="grid two-up">
-        <div class="cell fill">
-          <div class="panel">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
-          </div>
-        </div>
+      <p>Copyright (c) 2012 Patrick Arlt</p>
 
-        <div class="cell">
-          <div class="panel primary">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
-          </div>
-        </div>
-        
-        <div class="cell">
-          <div class="panel secondary">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
-          </div>
-        </div>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
-        <div class="cell">
-          <div class="panel success">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
-          </div>
-        </div>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
-        <div class="cell">
-          <div class="panel danger">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
-          </div>
-        </div>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
-
-      </div>
-    </div>
-  </div>
-</section>
     </div>
     <div id="push"></div>
   </div>

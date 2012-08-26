@@ -1,84 +1,145 @@
-<form>
+<form class="">
+  <!-- Basic -->
+  <div class="field">
+    <label>Email</label>
+    <div class="input">
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- With Help Text -->
+  <div class="field">
+    <label>Username</label>
+    <div class="input tooltip below">
+      <div class="tooltip-content">Woot</div>
+      <input type="text">
+    </div>
+  </div>
+
+   <!-- Multipile Inputs -->
+  <div class="field">
+    <label>Name</label>
+    <div class="input nine columns">
+      <input type="text">
+      <small><label>First</label></small>
+    </div>
+    <div class="input nine columns">
+      <input type="text">
+      <small><label>Last</label></small>
+    </div>
+  </div>
   
+  <!-- Note -->
+  <div class="field">
+    <label>Note</label>
+    <div class="input tooltip below">
+      <div class="tooltip-wrapper">
+        <div class="tooltip-content">
+          General Tooltip
+        </div>
+      </div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- Error -->
+  <div class="field">
+    <label>Error</label>
+    <div class="input tooltip below error">
+      <div class="tooltip-wrapper">
+        <div class="tooltip-content">
+          Error Text
+        </div>
+      </div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- Success -->
+  <div class="field">
+    <label>Note</label>
+    <div class="input tooltip below success">
+      <div class="tooltip-wrapper">
+        <div class="tooltip-content">
+          General Tooltip
+        </div>
+      </div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- Input List -->
+  <div class="field">
+    <label>Label</label>
+    <div class="input">
+      <ul>
+        <li><label><input type="radio">Radio 1</label></li>
+        <li><label><input type="radio">Radio 2</label></li>
+        <li><label><input type="radio">Radio 3</label></li>
+        <li><label><input type="radio">Radio 4</label></li>
+        <li><label><input type="radio">Radio 5</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Fieldset -->
   <fieldset>
     <legend>Name</legend>
-    <div class="two fields">
-      <div class="field">
+    <div class="field">
+      <label>First</label>
+      <div class="input">
         <input type="text">
-        <label>First</label>    
       </div>
-      <div class="field">
+    </div>
+    <div class="field">
+      <label>Last</label>
+      <div class="input">
         <input type="text">
-        <label>Last</label>    
       </div>
     </div>
   </fieldset>
   
-  <label class="field">
-    <span>Email</span>
-    <div class="input">
-      <input type="email">
-    </div>
-  </label>
-  
-  <fieldset>
-    <legend>Address</legend>
-
-    <div class="field">
-      <input type="text">
-      <label>Street</label>    
-    </div>
-
-    <div class="field">
-      <input type="text">
-      <label>Street 2</label>    
-    </div>
-    
-    <div class="fields three">
-      <div class="field">
-        <input type="text">
-        <label>City</label>    
-      </div>
-    
-      <div class="field">
-        <select>
-          <option>Oregon</option>
-          <option>Washington</option>
-        </select>
-        <label>State</label>    
-      </div>
-    
-      <div class="field">
-        <input type="text">
-        <label>Zip Code</label>    
-      </div>
-    </div>
-
-  </fieldset>
-
-  <label class="field">
-    <span>Password</span>
-    <div class="input">
-      <input type="email">
-    </div>
-  </label>
-
+  <!-- Basic -->
   <div class="field">
-    <span>Interests</span>
-    <ul class="input">
-      <li><label><input type="checkbox" checked>Dogs</label></li>
-      <li><label><input type="checkbox">Cats</label></li>
-    </ul>
+    <label>Email</label>
+    <div class="prefix with-btn six columns">
+      <input type="submit" value="Submit" class="block">
+    </div>
+    <div class="input prefix twelve columns">
+      <input type="text">
+    </div>
   </div>
 
   <div class="field">
-    <span>Freqency</span>
-    <ul class="input">
-      <li><label><input type="radio" name="frequency" checked>Weekly</label></li>
-      <li><label><input type="radio" name="frequency">Monthly</label></li>
-    </ul>
+    <label>Email</label>
+    <div class="input suffix twelve columns">
+      <input type="text">
+    </div>
+    <div class="suffix with-btn six columns">
+      <input type="submit" value="Submit" class="block">
+    </div>
   </div>
-  
+
+  <div class="field">
+    <label>Email</label>
+    <div class="prefix with-text four columns">
+      <span>Text</span>
+    </div>
+    <div class="input prefix fourteen columns">
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <div class="input suffix fourteen columns">
+      <input type="text">
+    </div>
+    <div class="suffix with-text four columns">
+      <span>Text</span>
+    </div>
+  </div>
+
   <div class="actions">
     <input type="submit" value="Submit">
   </div>

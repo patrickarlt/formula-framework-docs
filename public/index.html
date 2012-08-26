@@ -14,7 +14,7 @@
       <h1 class="text-logo">Formula</h1>
       <nav class="horizontal left">
         <ul>
-          <li><a href="/documentation">Documentation</a></li>
+          <li class="active"><a href="/documentation">Documentation</a></li>
           <li><a href="/documentation">Features</a></li>
           <li><a href="/documentation">Demos</a></li>
           <li class="dropdown">
@@ -217,19 +217,19 @@
         <a class="close"></a>
         <p>Test</p>
       </div>
+      <div class="alert primary">
+        <a class="close"></a>
+        <p>Test</p>
+      </div>
+      <div class="alert secondary">
+        <a class="close"></a>
+        <p>Test</p>
+      </div>
       <div class="alert success">
         <a class="close"></a>
         <p>Test</p>
       </div>
       <div class="alert danger">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-      <div class="alert notice">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-      <div class="alert info">
         <a class="close"></a>
         <p>Test</p>
       </div>
@@ -257,31 +257,44 @@
       <p><code>error</code> <code>success</code> <code>notice</code> <code>info</code></p>
     </div>
     <div class="fifteen columns pre-one"> 
+      
       <div class="grid two-up">
-        <div class="cell">
-          <div class="panel info">
+        <div class="cell fill">
+          <div class="panel">
             <h2>Woot!</h2>
             <p>Why hello there.</p>
           </div>
         </div>
+
         <div class="cell">
-          <div class="panel info">
+          <div class="panel primary">
             <h2>Woot!</h2>
             <p>Why hello there.</p>
           </div>
         </div>
+        
         <div class="cell">
-          <div class="panel info">
+          <div class="panel secondary">
             <h2>Woot!</h2>
             <p>Why hello there.</p>
           </div>
         </div>
+
         <div class="cell">
-          <div class="panel info">
+          <div class="panel success">
             <h2>Woot!</h2>
             <p>Why hello there.</p>
           </div>
         </div>
+
+        <div class="cell">
+          <div class="panel danger">
+            <h2>Woot!</h2>
+            <p>Why hello there.</p>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -290,6 +303,308 @@
   <hr>
 
   <section>
+  <div class="row">
+    <div class="twelve columns">
+      <form class="">
+  <!-- Basic -->
+  <div class="field">
+    <label>Email</label>
+    <div class="input">
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- With Help Text -->
+  <div class="field">
+    <label>Username</label>
+    <div class="input tooltip below">
+      <div class="tooltip-content">Woot</div>
+      <input type="text">
+    </div>
+  </div>
+
+   <!-- Multipile Inputs -->
+  <div class="field">
+    <label>Name</label>
+    <div class="input nine columns">
+      <input type="text">
+      <small><label>First</label></small>
+    </div>
+    <div class="input nine columns">
+      <input type="text">
+      <small><label>Last</label></small>
+    </div>
+  </div>
+  
+  <!-- Note -->
+  <div class="field">
+    <label>Note</label>
+    <div class="input tooltip below">
+      <div class="tooltip-wrapper">
+        <div class="tooltip-content">
+          General Tooltip
+        </div>
+      </div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- Error -->
+  <div class="field">
+    <label>Error</label>
+    <div class="input tooltip below error">
+      <div class="tooltip-wrapper">
+        <div class="tooltip-content">
+          Error Text
+        </div>
+      </div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- Success -->
+  <div class="field">
+    <label>Note</label>
+    <div class="input tooltip below success">
+      <div class="tooltip-wrapper">
+        <div class="tooltip-content">
+          General Tooltip
+        </div>
+      </div>
+      <input type="text">
+    </div>
+  </div>
+
+  <!-- Input List -->
+  <div class="field">
+    <label>Label</label>
+    <div class="input">
+      <ul>
+        <li><label><input type="radio">Radio 1</label></li>
+        <li><label><input type="radio">Radio 2</label></li>
+        <li><label><input type="radio">Radio 3</label></li>
+        <li><label><input type="radio">Radio 4</label></li>
+        <li><label><input type="radio">Radio 5</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Fieldset -->
+  <fieldset>
+    <legend>Name</legend>
+    <div class="field">
+      <label>First</label>
+      <div class="input">
+        <input type="text">
+      </div>
+    </div>
+    <div class="field">
+      <label>Last</label>
+      <div class="input">
+        <input type="text">
+      </div>
+    </div>
+  </fieldset>
+  
+  <!-- Basic -->
+  <div class="field">
+    <label>Email</label>
+    <div class="prefix with-btn six columns">
+      <input type="submit" value="Submit" class="block">
+    </div>
+    <div class="input prefix twelve columns">
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <div class="input suffix twelve columns">
+      <input type="text">
+    </div>
+    <div class="suffix with-btn six columns">
+      <input type="submit" value="Submit" class="block">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <div class="prefix with-text four columns">
+      <span>Text</span>
+    </div>
+    <div class="input prefix fourteen columns">
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <div class="input suffix fourteen columns">
+      <input type="text">
+    </div>
+    <div class="suffix with-text four columns">
+      <span>Text</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+    </div>
+     <div class="twelve columns">
+      <pre><code class='language-markup'>&lt;form class=&quot;&quot;&gt;
+  &lt;!-- Basic --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;input&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- With Help Text --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Username&lt;/label&gt;
+    &lt;div class=&quot;input tooltip below&quot;&gt;
+      &lt;div class=&quot;tooltip-content&quot;&gt;Woot&lt;/div&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;!-- Multipile Inputs --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Name&lt;/label&gt;
+    &lt;div class=&quot;input nine columns&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+      &lt;small&gt;&lt;label&gt;First&lt;/label&gt;&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input nine columns&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+      &lt;small&gt;&lt;label&gt;Last&lt;/label&gt;&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;!-- Note --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Note&lt;/label&gt;
+    &lt;div class=&quot;input tooltip below&quot;&gt;
+      &lt;div class=&quot;tooltip-wrapper&quot;&gt;
+        &lt;div class=&quot;tooltip-content&quot;&gt;
+          General Tooltip
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Error --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Error&lt;/label&gt;
+    &lt;div class=&quot;input tooltip below error&quot;&gt;
+      &lt;div class=&quot;tooltip-wrapper&quot;&gt;
+        &lt;div class=&quot;tooltip-content&quot;&gt;
+          Error Text
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Success --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Note&lt;/label&gt;
+    &lt;div class=&quot;input tooltip below success&quot;&gt;
+      &lt;div class=&quot;tooltip-wrapper&quot;&gt;
+        &lt;div class=&quot;tooltip-content&quot;&gt;
+          General Tooltip
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Input List --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 1&lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 2&lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 3&lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 4&lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 5&lt;/label&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Fieldset --&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Name&lt;/legend&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label&gt;First&lt;/label&gt;
+      &lt;div class=&quot;input&quot;&gt;
+        &lt;input type=&quot;text&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label&gt;Last&lt;/label&gt;
+      &lt;div class=&quot;input&quot;&gt;
+        &lt;input type=&quot;text&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  
+  &lt;!-- Basic --&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;prefix with-btn six columns&quot;&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;block&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input prefix twelve columns&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;input suffix twelve columns&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;suffix with-btn six columns&quot;&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;block&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;prefix with-text four columns&quot;&gt;
+      &lt;span&gt;Text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input prefix fourteen columns&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;input suffix fourteen columns&quot;&gt;
+      &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;suffix with-text four columns&quot;&gt;
+      &lt;span&gt;Text&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;actions&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<!--
+<section>
   <div class="row">
     <header class="twentyfour columns">
       <h2>Forms</h2>
@@ -446,6 +761,29 @@
     <label for="">Email</label>
   </div>
 </fieldset>
+
+
+<html>
+  <head>
+    <title>Title</title>
+  </head>
+  <body>
+    <form action="">
+    <fieldset>
+  
+  <legend>Fieldset Name</legend>
+  
+  <label>This is a label.</label>
+  <input type="text" placeholder="Standard Input" />
+  
+  <label>Address</label>
+  <input type="text" />
+  <input type="text" class="six" /> 
+  
+</fieldset>
+</form>
+  </body>
+</html>
       </form>
       <hr>
       <pre><code class='language-markup'>&lt;fieldset&gt;
@@ -464,7 +802,30 @@
     &lt;input type=&quot;email&quot;&gt;
     &lt;label for=&quot;&quot;&gt;Email&lt;/label&gt;
   &lt;/div&gt;
-&lt;/fieldset&gt;</code></pre>
+&lt;/fieldset&gt;
+
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;&quot;&gt;
+    &lt;fieldset&gt;
+  
+  &lt;legend&gt;Fieldset Name&lt;/legend&gt;
+  
+  &lt;label&gt;This is a label.&lt;/label&gt;
+  &lt;input type=&quot;text&quot; placeholder=&quot;Standard Input&quot; /&gt;
+  
+  &lt;label&gt;Address&lt;/label&gt;
+  &lt;input type=&quot;text&quot; /&gt;
+  &lt;input type=&quot;text&quot; class=&quot;six&quot; /&gt; 
+  
+&lt;/fieldset&gt;
+&lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
     </div>
 
     <div class="eight columns">
@@ -516,6 +877,7 @@
     </div>
   </div>
 </section>
+-->
 
 </div>
     </div>

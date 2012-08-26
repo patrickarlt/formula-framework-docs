@@ -3,6 +3,7 @@ require "bundler/setup"
 
 require "htmlentities"
 require "pry"
+require "redcarpet"
 
 ignore(/Gemfile/)
 ignore(/Gemfile\.lock/)
