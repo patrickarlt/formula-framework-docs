@@ -1,44 +1,117 @@
-<div class="title-bar">
-  <div class="container">
-    <div class="row">
-      <hgroup class="twentyfour columns">
-        <h1>Formula Framework</h1>
-        <h6>A Sass and Compass based CSS Framework</h6>
-      </hgroup>      
-    </div>
-  </div>
-</div>
+<div class="row">
+  <div class="eight column">
+    <form class="stacked" method="POST" action="/items/new">
 
-<div class="container">
-  <div class="row">
-    <div class="five columns">
-      <%= render "partials/_nav.html.erb" %>
-    </div>
-    <div class="nineteen columns">
-      
-      <%= render "doc-sections/buttons.html.erb" %>
+      <div class="field">
+        <label for"">Name</label>
+        <div class="input tooltip below">
+          <input type="text" name="name" placeholder="Name of the Item"> 
+          <div class="tooltip-wrapper">
+            <span class="tooltip-content">Woot</span>
+          </div>
+        </div>
+      </div>
 
-      <hr>
-      
-      <%= render "doc-sections/alerts.html.erb" %>
-      
-      <hr>
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <textarea name="description"></textarea>
+        </div>
+      </div>
 
-      <%= render "doc-sections/panels.html.erb" %>
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <ul>
+            <li><label><input name="radio" type="radio">Radio 1</label></li>
+            <li><label><input name="radio" type="radio">Radio 2</label></li>
+            <li><label><input name="radio" type="radio">Radio 3</label></li>
+            <li><label><input name="radio" type="radio">Radio 4</label></li>
+          </ul>
+        </div>
+      </div>
 
-      <hr>
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <ul>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 1</label></li>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 2</label></li>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 3</label></li>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 4</label></li>
+          </ul>
+        </div>
+      </div>
 
-      <%= render "doc-sections/forms.html.erb" %>
-      
-      <hr>
+      <fieldset>
+        <legend>Purchase Info</legend>
+        <div class="fields">
+          <div class="field column twelve">
+            <label for"">Purchased For</label>
+            <div class="input">
+              <input type="number" name="purchased_for"> 
+            </div>
+          </div>
 
-      <%= render "doc-sections/vertical-nav.html.erb" %>
+          <div class="field twelve">
+            <label for"">Purchased On</label>
+            <div class="input">
+              <input type="date" name="purchased_on"> 
+            </div>
+          </div>
+        </div>
+      </fieldset>
+        
+      <div class="fields">
+        <div class="field column twelve">
+          <label for"">Purchased For</label>
+          <div class="input">
+            <input type="number" name="purchased_for"> 
+          </div>
+        </div>
 
-      <hr>
+        <div class="field twelve">
+          <label for"">Purchased On</label>
+          <div class="input">
+            <input type="date" name="purchased_on"> 
+          </div>
+        </div>
+      </div>
 
-      <%= render "doc-sections/horizontal-nav.html.erb" %>
-      
-      
-    </div>
+      <div class="fields">
+        <div class="field eight">
+          <label for"">Purchased For</label>
+          <div class="input">
+            <input type="number" name="purchased_for"> 
+          </div>
+        </div>
+
+        <div class="field eight">
+          <label for"">Purchased For</label>
+          <div class="input">
+            <input type="number" name="purchased_for"> 
+          </div>
+        </div>
+
+        <div class="field eight">
+          <label for"">Purchased On</label>
+          <div class="input">
+            <input type="date" name="purchased_on"> 
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <textarea name="description"></textarea>
+        </div>
+      </div>
+
+      <div class="actions">
+        <input type="submit" value="Add Item">
+      </div>
+
+    </form>
   </div>
 </div>

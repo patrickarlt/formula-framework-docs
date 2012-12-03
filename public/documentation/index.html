@@ -2,1106 +2,127 @@
 <head>
   <title>Formula Framework</title>
   <link rel="stylesheet" href="/css/documentation.css">
-  <link rel="stylesheet" href="/prism.css">
 </head>
-<body class="language-markup">
+<body>
 
-  <div id="wrapper">
-    <header id="header">
-      <div class="container">
-  <div class="row">
-    <div class="twentyfour columns">
-      <h1 class="text-logo">Formula</h1>
-      <nav class="horizontal left">
-        <ul>
-          <li class="active"><a href="/documentation">Documentation</a></li>
-          <li><a href="/documentation">Features</a></li>
-          <li><a href="/documentation">Demos</a></li>
-          <li class="dropdown">
-            <a href="/themes">Themes</a>
-            <div class="dropdown-menu">
-              <ul>
-                <li><a href="/themes/default">Default</a></li>
-                <li><a href="/themes/bright">Bright</a></li>
-                <li><a href="/themes/light">Light</a></li>
-                <li><a href="/themes/dark">Dark</a></li>
-              </ul>
-              <hr>
-              <ul>
-                <li><a href="/thmes/custom">Write Your Own</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="horizontal right">
-        <ul>
-          <li><a href="">@formula</a></li>
-          <li><a href="">Github</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</div>
-    </header>
-    <div id="page">
-      <div class="title-bar">
   <div class="container">
     <div class="row">
-      <hgroup class="twentyfour columns">
-        <h1>Formula Framework</h1>
-        <h6>A Sass and Compass based CSS Framework</h6>
-      </hgroup>      
-    </div>
-  </div>
-</div>
+  <div class="eight column">
+    <form class="stacked" method="POST" action="/items/new">
 
-<div class="container">
-  <div class="row">
-    <div class="five columns">
-      <nav class="vertical panel">
-  <h3>Install and Setup</h3>
-  <ul>
-    <li><a href="">Get Formula</a></li>
-    <li><a href="">Installation</a></li>
-    <li><a href="">Setup</a></li>
-  </ul>
-  <hr>
-  <h3>Features</h3>
-  <ul>
-    <li><a href="">Themes</a></li>
-    <li><a href="">Responsive</a></li>
-    <li><a href="">Semantic</a></li>
-    <li><a href="">Pattern Library</a></li>
-  </ul>
-  <h3>Components</h3>
-  <ul>
-    <li><a href="">Grid System</a></li>
-    <li><a href="">Responsive Design</a></li>
-    <li><a href="">Typography</a></li>
-    <li><a href="">Forms</a></li>
-    <li><a href="">Buttons</a></li>
-    <li><a href="">Navigation</a></li>
-    <li><a href="">Tables</a></li>
-    <li><a href="">Panels</a></li>
-    <li><a href="">Alerts </a></li>
-    <li><a href="">Helpers</a></li>
-  </ul>
-  <hr>
-  <h3>Themes</h3>
-  <ul>
-    <li><a href="">Get Themes</a></li>
-    <li><a href="">Theme Maker</a></li>
-  </ul>
-</nav>
-    </div>
-    <div class="nineteen columns">
-      
-      <section class="row">
-  <header class="twentyfour columns">
-    <h2>Buttons</h2>
-  </header>
-  <div class="twentyfour columns">
-    <div class="row">
-      <div class="six columns">
+      <div class="field">
+        <label for"">Name</label>
+        <div class="input tooltip below">
+          <input type="text" name="name" placeholder="Name of the Item"> 
+          <div class="tooltip-wrapper">
+            <span class="tooltip-content">Woot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <textarea name="description"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <ul>
+            <li><label><input name="radio" type="radio">Radio 1</label></li>
+            <li><label><input name="radio" type="radio">Radio 2</label></li>
+            <li><label><input name="radio" type="radio">Radio 3</label></li>
+            <li><label><input name="radio" type="radio">Radio 4</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <ul>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 1</label></li>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 2</label></li>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 3</label></li>
+            <li><label><input name="checkbox" type="checkbox">Checkbox 4</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Purchase Info</legend>
+        <div class="fields">
+          <div class="field column twelve">
+            <label for"">Purchased For</label>
+            <div class="input">
+              <input type="number" name="purchased_for"> 
+            </div>
+          </div>
+
+          <div class="field twelve">
+            <label for"">Purchased On</label>
+            <div class="input">
+              <input type="date" name="purchased_on"> 
+            </div>
+          </div>
+        </div>
+      </fieldset>
         
-        <div class="tooltip above">
-          <a href="" class="btn small primary">Above</a>
-          <div class="tooltip-wrapper">
-            <div class="tooltip-content">I'm a tooltip can I can be any length I want to be!</div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="tooltip below">
-          <a href="" class="btn small primary">Below</a>
-          <div class="tooltip-wrapper">
-            <div class="tooltip-content">Button</div>  
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="tooltip before">
-          <a href="" class="btn small primary">Left</a>
-          <div class="tooltip-wrapper">
-            <div class="tooltip-content">Button</div>  
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="tooltip after">
-          <a href="" class="btn small primary">Right</a>
-          <div class="tooltip-wrapper">
-            <div class="tooltip-content">Button</div>  
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        Primary</a><br><br><br>
-        <a href="" class="btn small primary">Primary</a><br><br><br>
-        <a href="" class="btn primary">Primary</a><br><br><br>
-        <a href="" class="btn disabled primary">Primary</a><br><br><br>
-        <a href="" class="btn large primary">Primary</a><br><br><br>
-        <a href="" class="btn x-large primary">Primary</a><br><br><br>
-      </div>
-      <div class="six columns">
-        <a href="" class="btn x-small secondary">Secondary</a><br><br><br>
-        <a href="" class="btn small secondary">Secondary</a><br><br><br>
-        <a href="" class="btn secondary">Secondary</a><br><br><br>
-        <a href="" class="btn disabled secondary">Secondary</a><br><br><br>
-        <a href="" class="btn large secondary">Secondary</a><br><br><br>
-        <a href="" class="btn x-large secondary">Secondary</a><br><br><br>
-      </div>
-      <div class="six columns">
-        <a href="" class="btn x-small light">Light</a><br><br><br>
-        <a href="" class="btn small light">Light</a><br><br><br>
-        <a href="" class="btn light">Light</a><br><br><br>
-        <a href="" class="btn disabled light">Light</a><br><br><br>
-        <a href="" class="btn large light">Light</a><br><br><br>
-        <a href="" class="btn x-large light">Light</a><br><br><br>
-      </div>
-      <div class="six columns">
-        <a href="" class="btn x-small dark">Dark</a><br><br><br>
-        <a href="" class="btn small dark">Dark</a><br><br><br>
-        <a href="" class="btn dark">Dark</a><br><br><br>
-        <a href="" class="btn disabled dark">Dark</a><br><br><br>
-        <a href="" class="btn large dark">Dark</a><br><br><br>
-        <a href="" class="btn x-large dark">Dark</a><br><br><br>
-      </div>
-    </div>
-  </div>
-  <div class="twentyfour columns">
-    <div class="btn-group">
-      <a href="" class="btn primary">Primary</a>
-      <a href="" class="btn primary">Primary</a>
-      <div class="btn-dropdown">
-      <a href="" class="btn primary">Primary</a>
-        <div class="dropdown-menu">
-          <ul>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-          </ul>
-        </div>
-      </div>
-      <a href="" class="btn primary">Primary</a>
-    </div>
-
-    <div class="btn-group">
-      <div class="btn-dropdown">
-        <a href="" class="btn primary">Primary</a>
-        <div class="dropdown-menu">
-          <ul>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-          </ul>
-        </div>
-      </div>
-      <a href="" class="btn primary">Primary</a>
-      <div class="btn-dropdown">
-        <a href="" class="btn primary">Primary</a>
-        <div class="dropdown-menu">
-          <ul>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="toolbar">
-      <div class="btn-group">
-        <a href="" class="btn primary">Primary</a>
-        <div class="btn-dropdown">
-        <a href="" class="btn primary">Primary</a>
-          <div class="dropdown-menu">
-            <ul>
-              <li><a href="">Dropdown Item</a></li>
-              <li><a href="">Dropdown Item</a></li>
-              <li><a href="">Dropdown Item</a></li>
-            </ul>
-          </div>
-        </div>
-        <a href="" class="btn primary">Primary</a>
-      </div>
-
-      <form action="">
-        <div class="field">
-          <label class="hide">Email</label>
-          <div class="input suffix eighteen columns">
-            <input type="text" placeholder="Search">
-          </div>
-          <div class="suffix with-btn six left columns">
-            <input type="submit" value="Go">
-          </div>
-        </div>
-      </form>
-
-      <div class="btn-dropdown">
-        <a href="" class="btn primary">Primary</a>
-        <div class="dropdown-menu">
-          <ul>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-            <li><a href="">Dropdown Item</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-      <hr>
-      
-      <section class="row">
-  <header class="twentyfour columns">
-    <h2>Alerts</h2>
-  </header>
-  <div class="row">
-    <div class="eight columns">
-      <h6 class="compact">Examples</h6>
-      <pre><code class='language-markup'>&lt;div class=&quot;alert&quot;&gt;
-  &lt;a href=&quot;&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
-  &lt;p&gt;Alert&lt;/p&gt;
-&lt;/div&gt;s</code></pre>
-      <pre><code class='language-markup'>&lt;div class=&quot;alert success&quot;&gt;
-  &lt;a href=&quot;&quot; class=&quot;close&quot;&gt;&lt;/a&gt;
-  &lt;p&gt;Alert&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-      <h6 class="compact">Semantic Classes</h6>
-      <p>You can add classes to apply different styles to alerts.</p>
-      <p><code>error</code> <code>success</code> <code>notice</code> <code>info</code></p>
-    </div>
-    <div class="fifteen columns pre-one">
-      <div class="alert">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-      <div class="alert primary">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-      <div class="alert secondary">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-      <div class="alert success">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-      <div class="alert danger">
-        <a class="close"></a>
-        <p>Test</p>
-      </div>
-    </div>
-  </div>
-</section>
-      
-      <hr>
-
-      <section class="row">
-  <div class="twentyfour columns">
-    <h2>Panels</h2>
-  </div>
-  <div class="row">
-    <div class="eight columns">
-      <h6 class="compact">Examples</h6>
-      <pre><code class='language-markup'>&lt;div class=&quot;panel&quot;&gt;
-  &lt;p&gt;Alert&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-      <pre><code class='language-markup'>&lt;div class=&quot;panel success&quot;&gt;
-  &lt;p&gt;Alert&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-      <h6 class="compact">Semantic Classes</h6>
-      <p>You can add classes to apply different styles to alerts.</p>
-      <p><code>error</code> <code>success</code> <code>notice</code> <code>info</code></p>
-    </div>
-    <div class="fifteen columns pre-one"> 
-      
-      <div class="grid two-up">
-        <div class="cell fill">
-          <div class="panel">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
+      <div class="fields">
+        <div class="field column twelve">
+          <label for"">Purchased For</label>
+          <div class="input">
+            <input type="number" name="purchased_for"> 
           </div>
         </div>
 
-        <div class="cell">
-          <div class="panel primary">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
+        <div class="field twelve">
+          <label for"">Purchased On</label>
+          <div class="input">
+            <input type="date" name="purchased_on"> 
           </div>
         </div>
-        
-        <div class="cell">
-          <div class="panel secondary">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
-          </div>
-        </div>
+      </div>
 
-        <div class="cell">
-          <div class="panel success">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
+      <div class="fields">
+        <div class="field eight">
+          <label for"">Purchased For</label>
+          <div class="input">
+            <input type="number" name="purchased_for"> 
           </div>
         </div>
 
-        <div class="cell">
-          <div class="panel danger">
-            <h2>Woot!</h2>
-            <p>Why hello there.</p>
+        <div class="field eight">
+          <label for"">Purchased For</label>
+          <div class="input">
+            <input type="number" name="purchased_for"> 
           </div>
         </div>
 
-
-      </div>
-    </div>
-  </div>
-</section>
-
-      <hr>
-
-      <section>
-  <div class="row">
-    <div class="twelve columns">
-      <form class="">
-  <!-- Basic -->
-  <div class="field">
-    <label>Email</label>
-    <div class="input">
-      <input type="text">
-    </div>
-  </div>
-
-  <!-- With Help Text -->
-  <div class="field">
-    <label>Username</label>
-    <div class="input tooltip below">
-      <div class="tooltip-content">Woot</div>
-      <input type="text">
-    </div>
-  </div>
-
-   <!-- Multipile Inputs -->
-  <div class="field">
-    <label>Name</label>
-    <div class="input nine columns">
-      <input type="text">
-      <small><label>First</label></small>
-    </div>
-    <div class="input nine columns">
-      <input type="text">
-      <small><label>Last</label></small>
-    </div>
-  </div>
-  
-  <!-- Note -->
-  <div class="field">
-    <label>Note</label>
-    <div class="input tooltip below">
-      <div class="tooltip-wrapper">
-        <div class="tooltip-content">
-          General Tooltip
+        <div class="field eight">
+          <label for"">Purchased On</label>
+          <div class="input">
+            <input type="date" name="purchased_on"> 
+          </div>
         </div>
       </div>
-      <input type="text">
-    </div>
-  </div>
 
-  <!-- Error -->
-  <div class="field">
-    <label>Error</label>
-    <div class="input tooltip below error">
-      <div class="tooltip-wrapper">
-        <div class="tooltip-content">
-          Error Text
+      <div class="field">
+        <label for"">Description</label>
+        <div class="input">
+          <textarea name="description"></textarea>
         </div>
       </div>
-      <input type="text">
-    </div>
-  </div>
 
-  <!-- Success -->
-  <div class="field">
-    <label>Note</label>
-    <div class="input tooltip below success">
-      <div class="tooltip-wrapper">
-        <div class="tooltip-content">
-          General Tooltip
-        </div>
+      <div class="actions">
+        <input type="submit" value="Add Item">
       </div>
-      <input type="text">
-    </div>
-  </div>
 
-  <!-- Input List -->
-  <div class="field">
-    <label>Label</label>
-    <div class="input">
-      <ul>
-        <li><label><input type="radio">Radio 1</label></li>
-        <li><label><input type="radio">Radio 2</label></li>
-        <li><label><input type="radio">Radio 3</label></li>
-        <li><label><input type="radio">Radio 4</label></li>
-        <li><label><input type="radio">Radio 5</label></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Fieldset -->
-  <fieldset>
-    <legend>Name</legend>
-    <div class="field">
-      <label>First</label>
-      <div class="input">
-        <input type="text">
-      </div>
-    </div>
-    <div class="field">
-      <label>Last</label>
-      <div class="input">
-        <input type="text">
-      </div>
-    </div>
-  </fieldset>
-  
-  <!-- Basic -->
-  <div class="field">
-    <label>Email</label>
-    <div class="prefix with-btn six columns">
-      <input type="submit" value="Submit" class="block">
-    </div>
-    <div class="input prefix twelve columns">
-      <input type="text">
-    </div>
-  </div>
-
-  <div class="field">
-    <label>Email</label>
-    <div class="input suffix twelve columns">
-      <input type="text">
-    </div>
-    <div class="suffix with-btn six columns">
-      <input type="submit" value="Submit" class="block">
-    </div>
-  </div>
-
-  <div class="field">
-    <label>Email</label>
-    <div class="prefix with-text four columns">
-      <span>Text</span>
-    </div>
-    <div class="input prefix fourteen columns">
-      <input type="text">
-    </div>
-  </div>
-
-  <div class="field">
-    <label>Email</label>
-    <div class="input suffix fourteen columns">
-      <input type="text">
-    </div>
-    <div class="suffix with-text four columns">
-      <span>Text</span>
-    </div>
-  </div>
-
-  <div class="actions">
-    <input type="submit" value="Submit">
-  </div>
-</form>
-    </div>
-     <div class="twelve columns">
-      <pre><code class='language-markup'>&lt;form class=&quot;&quot;&gt;
-  &lt;!-- Basic --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;input&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- With Help Text --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Username&lt;/label&gt;
-    &lt;div class=&quot;input tooltip below&quot;&gt;
-      &lt;div class=&quot;tooltip-content&quot;&gt;Woot&lt;/div&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-   &lt;!-- Multipile Inputs --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Name&lt;/label&gt;
-    &lt;div class=&quot;input nine columns&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-      &lt;small&gt;&lt;label&gt;First&lt;/label&gt;&lt;/small&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;input nine columns&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-      &lt;small&gt;&lt;label&gt;Last&lt;/label&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  
-  &lt;!-- Note --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Note&lt;/label&gt;
-    &lt;div class=&quot;input tooltip below&quot;&gt;
-      &lt;div class=&quot;tooltip-wrapper&quot;&gt;
-        &lt;div class=&quot;tooltip-content&quot;&gt;
-          General Tooltip
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Error --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Error&lt;/label&gt;
-    &lt;div class=&quot;input tooltip below error&quot;&gt;
-      &lt;div class=&quot;tooltip-wrapper&quot;&gt;
-        &lt;div class=&quot;tooltip-content&quot;&gt;
-          Error Text
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Success --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Note&lt;/label&gt;
-    &lt;div class=&quot;input tooltip below success&quot;&gt;
-      &lt;div class=&quot;tooltip-wrapper&quot;&gt;
-        &lt;div class=&quot;tooltip-content&quot;&gt;
-          General Tooltip
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Input List --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Label&lt;/label&gt;
-    &lt;div class=&quot;input&quot;&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 1&lt;/label&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 2&lt;/label&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 3&lt;/label&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 4&lt;/label&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot;&gt;Radio 5&lt;/label&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Fieldset --&gt;
-  &lt;fieldset&gt;
-    &lt;legend&gt;Name&lt;/legend&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;label&gt;First&lt;/label&gt;
-      &lt;div class=&quot;input&quot;&gt;
-        &lt;input type=&quot;text&quot;&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;label&gt;Last&lt;/label&gt;
-      &lt;div class=&quot;input&quot;&gt;
-        &lt;input type=&quot;text&quot;&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/fieldset&gt;
-  
-  &lt;!-- Basic --&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;prefix with-btn six columns&quot;&gt;
-      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;block&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;input prefix twelve columns&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;input suffix twelve columns&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;suffix with-btn six columns&quot;&gt;
-      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;block&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;prefix with-text four columns&quot;&gt;
-      &lt;span&gt;Text&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;input prefix fourteen columns&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;label&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;input suffix fourteen columns&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;suffix with-text four columns&quot;&gt;
-      &lt;span&gt;Text&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;actions&quot;&gt;
-    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-  &lt;/div&gt;
-&lt;/form&gt;</code></pre>
-    </div>
-  </div>
-</section>
-
-<!--
-<section>
-  <div class="row">
-    <header class="twentyfour columns">
-      <h2>Forms</h2>
-    </header>
-  </div>
-      
-  <div class="row">
-    <div class="ten columns">
-      <h4 class="compact-top">Basic Structure</h4>
-      <p>Forms in Formula are designed to be as easy and semantic as possible. Inside a <code>&lt;form&gt;</code> tag. Your inputs will go inside tags with <code>field</code> classes usually <code>&lt;label class=&quot;field&quot;&gt;</code> or <code>&lt;div class=&quot;field&quot;&gt;</code>. Place your submit button at the bottom inside a <code>&lt;div class=&quot;actions&quot;&gt;</code>.</p>
-      <h4>Layout Classes</h4>
-      <ul>
-        <li><code>stacked</code> arranges <code>&lt;label&gt;</code> tags above <code>&lt;input&gt;</code> tags</li>
-        <li><code>single</code> makes the submit button inline with the form</li>
-      </ul>
-      <small><code>$formsStacked: true;</code> in your config will stack all forms.</small>
-      <h4>Responsive Forms</h4>
-      <p>By default forms will be 100% wide and fill their parent elements and will become stacked forms at smaller screen sizes. Set <code>$formsRespondTo: false;</code> in your configuration to disable this and use the <code>responsive</code> class on individual forms.</p>
-    </div>
-    <div class="fourteen columns">
-      <form>
-  <!-- Field -->
-  <label class="field">
-    <span>Email</span>
-    <div class="input">
-      <input type="Email">
-    </div>
-  </label>
-
-  <!-- Actions -->
-  <div class="actions">
-    <input type="submit" value="Login">
-  </div>
-</form>
-
-      <hr>
-      <form class="stacked">
-  <!-- Field -->
-  <label class="field">
-    <span>Email</span>
-    <div class="input">
-      <input type="Email">
-    </div>
-  </label>
-
-  <!-- Actions -->
-  <div class="actions">
-    <input type="submit" value="Login">
-  </div>
-</form>
-
-      <hr>
-      <form class="single">
-        <label class="field">
-  <span>Label</span>
-  <div class="input">
-    <input type="text">
-  </div>
-</label>
-        <div class="actions">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-      <pre><code class='language-markup'>&lt;form&gt;
-  &lt;!-- Field --&gt;
-  &lt;label class=&quot;field&quot;&gt;
-    &lt;span&gt;Email&lt;/span&gt;
-    &lt;div class=&quot;input&quot;&gt;
-      &lt;input type=&quot;Email&quot;&gt;
-    &lt;/div&gt;
-  &lt;/label&gt;
-
-  &lt;!-- Actions --&gt;
-  &lt;div class=&quot;actions&quot;&gt;
-    &lt;input type=&quot;submit&quot; value=&quot;Login&quot;&gt;
-  &lt;/div&gt;
-&lt;/form&gt;
-</code></pre>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="twelve columns">
-      <h4>Text Fields</h4>
-      <p>Simple inputs are wrapped with a <code>&lt;label class=&quot;field&quot;&gt;</code> element.  Place your label text inside a <code>&lt;span&gt;</code> tag . Your <code>&lt;input&gt;</code> elements should be wrapped inside <code>&lt;div class=&quot;input&quot;&gt;</code>. You should use this syntax for inputs such as <code>&lt;input type=&quot;text&quot;&gt;</code>, <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code></p>
-      <hr>
-      <form>
-        <label class="field">
-  <span>Label</span>
-  <div class="input">
-    <input type="text">
-  </div>
-</label>
-      </form>
-      <hr>
-      <pre><code class='language-markup'>&lt;label class=&quot;field&quot;&gt;
-  &lt;span&gt;Label&lt;/span&gt;
-  &lt;div class=&quot;input&quot;&gt;
-    &lt;input type=&quot;text&quot;&gt;
-  &lt;/div&gt;
-&lt;/label&gt;</code></pre>
-    </div>
-    <div class="twelve columns">  
-      <h4>Radio Buttons and Checkboxes</h4>
-      <p>For <code>&lt;input type=&quot;radio&quot;&gt;</code> and <code>&lt;input type=&quot;checkbox&quot;&gt;</code> inputs, apply the <code>input</code> class to a <code>&lt;ul&gt;</code> and place your <code>&lt;input&gt;</code>s wrapped inside <code>&lt;label&gt;</code> tags in the <code>&lt;li&gt;</code> tags of the list. This creates a nice semantic list of options.</p>
-      <hr>
-      <form>
-        <div class="field">
-  <span>Options</span>
-  <ul class="input">
-    <li><label><input type="checkbox" checked>One</label></li>
-    <li><label><input type="checkbox" checked>Two</label></li>
-  </ul>
-</div>
-    
-      </form>
-      <hr>
-      <pre><code class='language-markup'>&lt;div class=&quot;field&quot;&gt;
-  &lt;span&gt;Options&lt;/span&gt;
-  &lt;ul class=&quot;input&quot;&gt;
-    &lt;li&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; checked&gt;One&lt;/label&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot; checked&gt;Two&lt;/label&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-    </code></pre>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="eight columns">
-      <h4 class="compact-top">Fieldsets and Grouped Fields</h4>
-      <p><code>&lt;fieldset&gt;</code> elements can be used to group fields togather. Create the standard <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> elements. to get started.</p>
-      <p>Once you have a field set you can group fields on the same line as children of a <code>&lt;div class=&quot;fields two|three|four&quot;&gt;</code> element. You can group 2-4 fields on the same line.</p>
-      <p>Inside your fields elements you can put multupile <code>&lt;div class=&quot;field&quot;&gt;</code> elements with a <code>&lt;input&gt;</code> and <code>&lt;div class=&quot;label&quot;&gt;</code></p>
-      <p>You can also place <code>&lt;div class=&quot;field&quot;&gt;</code> tags inside your <code>&lt;fieldset&gt;</code> to create inputs that span the whole width of the <code>&lt;fieldset&gt;</code></p>
-    </div>
-
-    <div class="eight columns">
-      <form class="stacked">
-        <fieldset>
-  <legend>Profile</legend>
-  <div class="two fields">
-    <div class="field">
-      <input type="text">
-      <label for="">First</label>
-    </div>
-    <div class="field">
-      <input type="text">
-      <label for="">Last</label>
-    </div>
-  </div>
-  <div class="field">
-    <input type="email">
-    <label for="">Email</label>
-  </div>
-</fieldset>
-
-
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <form action="">
-    <fieldset>
-  
-  <legend>Fieldset Name</legend>
-  
-  <label>This is a label.</label>
-  <input type="text" placeholder="Standard Input" />
-  
-  <label>Address</label>
-  <input type="text" />
-  <input type="text" class="six" /> 
-  
-</fieldset>
-</form>
-  </body>
-</html>
-      </form>
-      <hr>
-      <pre><code class='language-markup'>&lt;fieldset&gt;
-  &lt;legend&gt;Profile&lt;/legend&gt;
-  &lt;div class=&quot;two fields&quot;&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-      &lt;label for=&quot;&quot;&gt;First&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;input type=&quot;text&quot;&gt;
-      &lt;label for=&quot;&quot;&gt;Last&lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;field&quot;&gt;
-    &lt;input type=&quot;email&quot;&gt;
-    &lt;label for=&quot;&quot;&gt;Email&lt;/label&gt;
-  &lt;/div&gt;
-&lt;/fieldset&gt;
-
-
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Title&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;form action=&quot;&quot;&gt;
-    &lt;fieldset&gt;
-  
-  &lt;legend&gt;Fieldset Name&lt;/legend&gt;
-  
-  &lt;label&gt;This is a label.&lt;/label&gt;
-  &lt;input type=&quot;text&quot; placeholder=&quot;Standard Input&quot; /&gt;
-  
-  &lt;label&gt;Address&lt;/label&gt;
-  &lt;input type=&quot;text&quot; /&gt;
-  &lt;input type=&quot;text&quot; class=&quot;six&quot; /&gt; 
-  
-&lt;/fieldset&gt;
-&lt;/form&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-    </div>
-
-    <div class="eight columns">
-      <form class="stacked">
-        <fieldset>
-  <legend>Location</legend>
-  <div class="three fields">
-    <div class="field">
-      <input type=text>
-      <label for="">City</label>
-    </div>
-    <div class="field">
-      <select>
-        <option>Oregon</option>
-        <option>Washington</option>
-        <option>California</option>
-      </select>
-      <label for="">State</label>
-    </div>
-    <div class="field">
-      <input type=text>
-      <label for="">Zip</label>
-    </div>
-  </div>
-</fieldset>
-      </form>
-      <hr>
-      <pre><code class='language-markup'>&lt;fieldset&gt;
-  &lt;legend&gt;Location&lt;/legend&gt;
-  &lt;div class=&quot;three fields&quot;&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;input type=text&gt;
-      &lt;label for=&quot;&quot;&gt;City&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;select&gt;
-        &lt;option&gt;Oregon&lt;/option&gt;
-        &lt;option&gt;Washington&lt;/option&gt;
-        &lt;option&gt;California&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;label for=&quot;&quot;&gt;State&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;field&quot;&gt;
-      &lt;input type=text&gt;
-      &lt;label for=&quot;&quot;&gt;Zip&lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/fieldset&gt;</code></pre>
-    </div>
-  </div>
-</section>
--->
-      
-      <hr>
-
-      <section class="row">
-  <header class="twentyfour columns">
-    <h2>Vertical Nav</h2>
-  </header>
-  <div class="row">
-    <div class="seven columns">
-      <nav class="vertical panel">
-  <ul>
-    <li><a href="#">Item 1</a></li>
-    <li><a href="#">Item 2</a></li>
-    <li><a href="#">Item 3</a></li>
-  </ul>
-  <h3>Nav Title</h3>  
-  <ul>
-    <li><a href="#">Item 4</a></li>
-    <li><a href="#">Item 5</a></li>
-    <li><a href="#">Item 6</a></li>
-    <li class="dropdown">
-      <a href="#">Dropdown</a>
-      <div class="dropdown-menu">
-        <h3>Title</h3>
-        <ul>
-          <li><a href="#">Dropdown 1</a></li>
-        </ul>
-        <hr>
-        <ul>
-          <li><a href="#">Dropdown 2</a></li>
-        </ul>
-      </div>
-    </li>
-    <li><a href="#">Item 8</a></li>
-  </ul>
-  <hr>
-  <ul>
-    <li><a href="#">Item 7</a></li>
-  </ul>
-</nav>
-    </div>
-    <div class="sixteen pre-one columns">
-      Text
-      <pre><code class='language-markup'>&lt;nav class=&quot;vertical panel&quot;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;h3&gt;Nav Title&lt;/h3&gt;  
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 5&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 6&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;dropdown&quot;&gt;
-      &lt;a href=&quot;#&quot;&gt;Dropdown&lt;/a&gt;
-      &lt;div class=&quot;dropdown-menu&quot;&gt;
-        &lt;h3&gt;Title&lt;/h3&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown 1&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;hr&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown 2&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 8&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;hr&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 7&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-    </div>
-  </div>
-</section>
-
-      <hr>
-
-      <section class="row">
-  <header class="twentyfour columns">
-    <h2>Horizontal Nav</h2>
-  </header>
-  <div class="row">
-    <div class="eight columns">
-      Text
-    </div>
-    <div class="fifteen columns pre-one">
-      <nav class="horizontal panel">
-  <ul>
-    <li><a href="/documentation">Item 1</a></li>
-    <li><a href="/documentation">Item 2</a></li>
-    <li class="dropdown">
-      <a href="/themes">Dropdown</a>
-      <div class="dropdown-menu">
-        <h3>Title</h3>
-        <ul>
-          <li><a href="/themes/default">Dropdown 1</a></li>
-          <li><a href="/themes/bright">Dropdown 2</a></li>
-        </ul>
-        <hr>
-        <ul>
-          <li><a href="/themes/default">Dropdown 3</a></li>
-          <li><a href="/themes/bright">Dropdown 4</a></li>
-        </ul>
-      </div>
-    </li>
-    <li><a href="/documentation">Item 3</a></li>
-  </ul>
-</nav>
-      <pre><code class='language-markup'>&lt;nav class=&quot;horizontal panel&quot;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;/documentation&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;/documentation&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;dropdown&quot;&gt;
-      &lt;a href=&quot;/themes&quot;&gt;Dropdown&lt;/a&gt;
-      &lt;div class=&quot;dropdown-menu&quot;&gt;
-        &lt;h3&gt;Title&lt;/h3&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;/themes/default&quot;&gt;Dropdown 1&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;/themes/bright&quot;&gt;Dropdown 2&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;hr&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;/themes/default&quot;&gt;Dropdown 3&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;/themes/bright&quot;&gt;Dropdown 4&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;/documentation&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-    </div>
-  </div>
-</section>
-      
-      
-    </div>
+    </form>
   </div>
 </div>
-
-    </div>
-    <div id="push"></div>
   </div>
-
-  <footer id="footer">
-    Footer
-  </footer>
-
-  <script type="text/javascript" src="/prism.js"></script>
-  <script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
-  <script type="text/javascript" src="/js/formula.js"></script>
 </body>
 </html>

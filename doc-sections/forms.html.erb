@@ -1,97 +1,50 @@
 <section>
   <div class="row">
     <div class="twelve columns">
-      <%= render "sample-code/_form1.html.erb" %>
+      <form class="stacked" method="POST" action="/items/new">
+
+        <div class="field">
+          <label for"">Name</label>
+          <div class="input">
+            <input type="text" name="name" placeholder="Name of the Item"> 
+          </div>
+        </div>
+
+        <div class="field">
+          <label for"">Description</label>
+          <div class="input">
+            <textarea name="description"></textarea>
+          </div>
+        </div>
+        
+        <div class="fields">
+          <div class="twelve columns">
+            <div class="field">
+              <label for"">Purchased For</label>
+              <div class="input ">
+                <input type="number" name="purchased_for"> 
+              </div>
+            </div>
+          </div>
+
+          <div class="twelve columns">
+            <div class="field">
+              <label for"">Purchased On</label>
+              <div class="input ">
+                <input type="date" name="purchased_on"> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <input type="submit" value="Add Item">
+        </div>
+
+      </form>
     </div>
      <div class="twelve columns">
-      <%= sample_code "sample-code/_form1.html.erb", "markup" %>
-    </div>
-  </div>
-</section>
-
-<!--
-<section>
-  <div class="row">
-    <header class="twentyfour columns">
-      <h2>Forms</h2>
-    </header>
-  </div>
       
-  <div class="row">
-    <div class="ten columns">
-      <h4 class="compact-top">Basic Structure</h4>
-      <p>Forms in Formula are designed to be as easy and semantic as possible. Inside a <code><%= h "<form>" %></code> tag. Your inputs will go inside tags with <code>field</code> classes usually <code><%= h '<label class="field">' %></code> or <code><%= h '<div class="field">' %></code>. Place your submit button at the bottom inside a <code><%= h '<div class="actions">' %></code>.</p>
-      <h4>Layout Classes</h4>
-      <ul>
-        <li><code>stacked</code> arranges <code><%= h "<label>" %></code> tags above <code><%= h "<input>" %></code> tags</li>
-        <li><code>single</code> makes the submit button inline with the form</li>
-      </ul>
-      <small><code>$formsStacked: true;</code> in your config will stack all forms.</small>
-      <h4>Responsive Forms</h4>
-      <p>By default forms will be 100% wide and fill their parent elements and will become stacked forms at smaller screen sizes. Set <code>$formsRespondTo: false;</code> in your configuration to disable this and use the <code>responsive</code> class on individual forms.</p>
-    </div>
-    <div class="fourteen columns">
-      <%= render "sample-code/_form_structure.html.erb" %>
-      <hr>
-      <%= render "sample-code/_form_structure1.html.erb" %>
-      <hr>
-      <form class="single">
-        <%= render "sample-code/_field_markup.html.erb" %>
-        <div class="actions">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-      <%= sample_code "sample-code/_form_structure.html.erb", "markup" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="twelve columns">
-      <h4>Text Fields</h4>
-      <p>Simple inputs are wrapped with a <code><%= h '<label class="field">' %></code> element.  Place your label text inside a <code><%= h "<span>" %></code> tag . Your <code><%= h '<input>' %></code> elements should be wrapped inside <code><%= h '<div class="input">'%></code>. You should use this syntax for inputs such as <code><%= h '<input type="text">'%></code>, <code><%= h '<textarea>'%></code> and <code><%= h '<select>'%></code></p>
-      <hr>
-      <form>
-        <%= render "sample-code/_field_markup.html.erb" %>
-      </form>
-      <hr>
-      <%= sample_code "sample-code/_field_markup.html.erb", "markup" %>
-    </div>
-    <div class="twelve columns">  
-      <h4>Radio Buttons and Checkboxes</h4>
-      <p>For <code><%= h '<input type="radio">'%></code> and <code><%= h '<input type="checkbox">'%></code> inputs, apply the <code>input</code> class to a <code><%= h "<ul>"%></code> and place your <code><%= h '<input>'%></code>s wrapped inside <code><%= h "<label>"%></code> tags in the <code><%= h '<li>'%></code> tags of the list. This creates a nice semantic list of options.</p>
-      <hr>
-      <form>
-        <%= render "sample-code/_radio_checkboxes.html.erb" %>
-      </form>
-      <hr>
-      <%= sample_code "sample-code/_radio_checkboxes.html.erb", "markup" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="eight columns">
-      <h4 class="compact-top">Fieldsets and Grouped Fields</h4>
-      <p><code><%= h '<fieldset>'%></code> elements can be used to group fields togather. Create the standard <code><%= h '<fieldset>'%></code> and <code><%= h '<legend>'%></code> elements. to get started.</p>
-      <p>Once you have a field set you can group fields on the same line as children of a <code><%= h '<div class="fields two|three|four">'%></code> element. You can group 2-4 fields on the same line.</p>
-      <p>Inside your fields elements you can put multupile <code><%= h '<div class="field">'%></code> elements with a <code><%= h '<input>'%></code> and <code><%= h '<div class="label">'%></code></p>
-      <p>You can also place <code><%= h '<div class="field">'%></code> tags inside your <code><%= h '<fieldset>'%></code> to create inputs that span the whole width of the <code><%= h '<fieldset>'%></code></p>
-    </div>
-
-    <div class="eight columns">
-      <form class="stacked">
-        <%= render "sample-code/_fieldset.html.erb" %>
-      </form>
-      <hr>
-      <%= sample_code "sample-code/_fieldset.html.erb", "markup" %>
-    </div>
-
-    <div class="eight columns">
-      <form class="stacked">
-        <%= render "sample-code/_fieldset1.html.erb" %>
-      </form>
-      <hr>
-      <%= sample_code "sample-code/_fieldset1.html.erb", "markup" %>
     </div>
   </div>
 </section>
--->

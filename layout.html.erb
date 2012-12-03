@@ -2,26 +2,11 @@
 <head>
   <title><%= title %></title>
   <link rel="stylesheet" href="/css/documentation.css">
-  <link rel="stylesheet" href="/prism.css">
 </head>
-<body class="language-markup">
+<body>
 
-  <div id="wrapper">
-    <header id="header">
-      <%= render "partials/_header.html.erb" %>
-    </header>
-    <div id="page">
-      <%= yield %>
-    </div>
-    <div id="push"></div>
+  <div class="container">
+    <%= yield %>
   </div>
-
-  <footer id="footer">
-    Footer
-  </footer>
-
-  <script type="text/javascript" src="/prism.js"></script>
-  <script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
-  <script type="text/javascript" src="/js/formula.js"></script>
 </body>
 </html>
